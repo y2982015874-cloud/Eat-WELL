@@ -1,0 +1,44 @@
+{
+  "model": "models/det10/weights/best.pt",
+  "task": "detection",
+  "total_ms": 2679.5,
+  "n_images": 1,
+  "results": [
+    {
+      "image_id": "test_00000",
+      "model_version": "det10-v1",
+      "task_type": "detection",
+      "image_width": 640,
+      "image_height": 640,
+      "detections": [
+        {
+          "class_id": 0,
+          "food_id": 0,
+          "food_name": "米饭",
+          "confidence": 0.9206,
+          "bbox_xyxy": [
+            4.4,
+            338.6,
+            628.2,
+            640.0
+          ]
+        },
+        {
+          "class_id": 7,
+          "food_id": 82,
+          "food_name": "麻婆豆腐",
+          "confidence": 0.7799,
+          "bbox_xyxy": [
+            172.3,
+            187.7,
+            507.9,
+            471.3
+          ]
+        }
+      ],
+      "status": "ok",
+      "warnings": [],
+      "infer_ms": 2679.5
+    }
+  ]
+}

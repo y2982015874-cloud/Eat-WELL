@@ -1,0 +1,14 @@
+# 依赖清单 — requirements.txt
+# 环境：Windows / Python 3.12 / CPU-only（无独立显卡）
+# 安装：
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements.txt
+torch==2.5.0            # CPU 版（2.5.0+cpu，经 --index-url 安装）
+torchvision==0.20.0     # CPU 版
+ultralytics==8.4.184    # YOLOv8 训练 / 推理 / 评测
+pandas==3.1.0           # 营养表清洗（读 xlsx、写 csv）
+openpyxl==3.1.5         # pandas 读 density.xlsx 的引擎
+pillow==12.0.0          # 图像解码与合成检测集绘制
+python-docx==1.2.0      # 仅 scripts/patch_prd.py 修订 PRD 文档时使用
+# 标准库依赖（无需安装）：csv / json / zipfile / unittest / argparse / dataclasses
+#   web/serve.py 用 http.server 自建服务，不依赖 fastapi / uvicorn

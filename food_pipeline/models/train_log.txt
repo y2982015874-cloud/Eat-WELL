@@ -1,0 +1,7 @@
+[13:08:18] torch=2.5.0+cpu cuda=False cpu=Intel64 Family 6 Model 186 Stepping 2, GenuineIntel threads=12
+[13:08:18] == 训练 YOLOv8n-cls (datasets/cls10) ==
+[13:33:33] cls 训练完成
+[13:33:33] == 训练 YOLOv8n-det (datasets/det10) ==
+[13:39:48] det-only: torch=2.5.0+cpu cuda=False threads=12
+[14:45:15] det 训练完成
+[14:45:15] ALL TRAINING DONE

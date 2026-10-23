@@ -1,0 +1,113 @@
+{
+  "targets": {
+    "bmr": 1698.8,
+    "tdee": 2038.5,
+    "target_kcal": 2038.5,
+    "target_protein_g": 127.4,
+    "target_fat_g": 67.9,
+    "target_carb_g": 229.3,
+    "bmi": 24.5,
+    "bmi_advice": false,
+    "notes": []
+  },
+  "meal": {
+    "items": [
+      {
+        "food_id": 0,
+        "food_name": "米饭",
+        "weight_g": 200.0,
+        "weight_source": "user_input",
+        "carb_g": 51.8,
+        "fat_g": 0.6,
+        "protein_g": 5.2,
+        "fiber_g": 0.6,
+        "energy_kcal": 232.0,
+        "per_100g": {
+          "carb_g": 25.900000000000002,
+          "fat_g": 0.3,
+          "protein_g": 2.6,
+          "fiber_g": 0.3,
+          "energy_kcal": 115.99999999999999
+        },
+        "status": "ok",
+        "warnings": []
+      },
+      {
+        "food_id": 83,
+        "food_name": "红烧肉",
+        "weight_g": 150.0,
+        "weight_source": "portion_reference",
+        "carb_g": 5.07,
+        "fat_g": 79.19,
+        "protein_g": 12.91,
+        "fiber_g": 0.82,
+        "energy_kcal": 430.49,
+        "per_100g": {
+          "carb_g": 3.38,
+          "fat_g": 52.790000000000006,
+          "protein_g": 8.61,
+          "fiber_g": 0.5499999999999999,
+          "energy_kcal": 286.99
+        },
+        "status": "ok",
+        "warnings": [
+          "重量按份量参考 1份=150.0g × 1.0 折算，非称重值"
+        ]
+      },
+      {
+        "food_id": 74,
+        "food_name": "冬瓜汤",
+        "weight_g": 250.0,
+        "weight_source": "model_estimate",
+        "carb_g": 2.38,
+        "fat_g": 4.22,
+        "protein_g": 0.9,
+        "fiber_g": 0.9,
+        "energy_kcal": 48.95,
+        "per_100g": {
+          "carb_g": 0.95,
+          "fat_g": 1.69,
+          "protein_g": 0.36,
+          "fiber_g": 0.36,
+          "energy_kcal": 19.580000000000002
+        },
+        "status": "ok",
+        "warnings": [
+          "重量为模型估算值，非称重实测，存在份量误差"
+        ]
+      }
+    ],
+    "totals": {
+      "carb_g": 59.25,
+      "fat_g": 84.01,
+      "protein_g": 19.01,
+      "fiber_g": 2.32,
+      "energy_kcal": 711.44
+    },
+    "status": "ok",
+    "warnings": [
+      "[红烧肉] 重量按份量参考 1份=150.0g × 1.0 折算，非称重值",
+      "[冬瓜汤] 重量为模型估算值，非称重实测，存在份量误差"
+    ]
+  },
+  "alerts": [
+    {
+      "code": "AL-04",
+      "name": "碳水超标",
+      "message": "今日碳水已达目标的 126%，建议减少主食份量",
+      "basis": "goal=control_sugar 且 289.25 > 229.3×1.1",
+      "severity": "high",
+      "record_date": "2026-10-23",
+      "trigger_time": "21:15"
+    },
+    {
+      "code": "AL-03",
+      "name": "蛋白质不足",
+      "message": "蛋白质缺口约 48g，可加一份鸡胸肉（约 100g，含蛋白约 31g）",
+      "basis": "79.01 < 127.4×0.7 且 时间≥20:00",
+      "severity": "medium",
+      "record_date": "2026-10-23",
+      "trigger_time": "21:15"
+    }
+  ]
+}

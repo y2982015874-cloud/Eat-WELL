@@ -1,0 +1,22 @@
+[1] 读取原始表: D:/workbuddy/kkk/DFoodTJ-Nutr/density.xlsx  shape=(351, 14)
+[2] food_id 0..350 连续且无重复 —— 与 DFoodTJ-Rec 类别 ID 对齐通过
+[2b] R1 换算完成：质量密度列 ×100 转为每100g口径 ['carb_g_per_100g', 'fat_g_per_100g', 'protein_g_per_100g', 'fiber_g_per_100g', 'energy_kcal_per_100g']
+[3] name_zh 重复记录数: 0
+[4] 各数值列缺失/异常统计:
+    density_g_ml                 缺失=  0  负值=  0  零值=  0
+    carb_g_per_100g              缺失=  0  负值=  0  零值=  0
+    carb_g_per_ml                缺失=  0  负值=  0  零值=  0
+    fat_g_per_100g               缺失=  0  负值=  0  零值=  2
+    fat_g_per_ml                 缺失=  0  负值=  0  零值=  2
+    protein_g_per_100g           缺失=  0  负值=  0  零值=  0
+    protein_g_per_ml             缺失=  0  负值=  0  零值=  0
+    fiber_g_per_100g             缺失=  0  负值=  0  零值= 49
+    fiber_g_per_ml               缺失=  0  负值=  0  零值= 49
+    energy_kcal_per_100g         缺失=  0  负值=  0  零值=  0
+    energy_kcal_per_ml           缺失=  0  负值=  0  零值=  0
+[5] 能量守恒校验: 偏差>20% 的记录 33 条
+    （来源表能量为实测值，含酒精/有机酸等 Atwater 特例，偏差仅作提示不作剔除）
+[6] tier1 名称校验不一致: 0 条
+[7] 写出 nutrition_clean.csv  rows=351
+[8] 合并图像统计: 351 类
+[9] 写出 class_mapping.csv  rows=351

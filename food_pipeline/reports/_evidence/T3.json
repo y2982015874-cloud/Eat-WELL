@@ -1,0 +1,45 @@
+{
+ "meta": {
+  "image_width": null,
+  "image_height": null,
+  "det_ms": 0.0,
+  "cls_ms": 0.0,
+  "total_ms": 3.6,
+  "device": "CPU",
+  "cls_version": "cls10-v1",
+  "det_version": "det10-v1"
+ },
+ "image_b64": null,
+ "orig_b64": null,
+ "detection": {
+  "image_id": "1b1ff990",
+  "model_version": "det10-v1",
+  "task_type": "detection",
+  "image_width": null,
+  "image_height": null,
+  "detections": [],
+  "status": "error",
+  "warnings": [
+   "图片读取失败：UnidentifiedImageError: cannot identify image file 'C:\\\\Users\\\\29820\\\\AppData\\\\Local\\\\Temp\\\\tmpu151pz9b.jpg'（请上传 jpg/png 等有效图片文件）"
+  ]
+ },
+ "fallback": false,
+ "classification": {
+  "top5": [],
+  "status": "error"
+ },
+ "items": [],
+ "meal": null,
+ "targets": {
+  "bmr": 1648.8,
+  "tdee": 2555.6,
+  "target_kcal": 2172.2,
+  "target_protein_g": 162.9,
+  "target_fat_g": 60.3,
+  "target_carb_g": 244.4,
+  "bmi": 22.9,
+  "bmi_advice": false,
+  "notes": []
+ },
+ "alerts": []
+}

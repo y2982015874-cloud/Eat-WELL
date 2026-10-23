@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>中餐食物识别 · 营养分析 验收面板</title>
+<style>
+:root{
+  --bg:#f5f6f8; --card:#ffffff; --line:#e3e6ea; --text:#1f2329; --sub:#6b7280;
+  --brand:#1f6feb; --ok:#16a34a; --warn:#f59e0b; --bad:#dc2626; --chip:#eef2f7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,-apple-system,Segoe UI,sans-serif;}
+header{background:var(--card);border-bottom:1px solid var(--line);padding:14px 22px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;position:sticky;top:0;z-index:5}
+h1{font-size:17px;margin:0;font-weight:700}
+.badge{font-size:12px;background:var(--chip);color:var(--sub);padding:3px 9px;border-radius:20px}
+.badge.live{background:#e8f5ec;color:var(--ok)}
+.badge.err{background:#fdecec;color:var(--bad)}
+main{max-width:1400px;margin:0 auto;padding:18px;display:grid;grid-template-columns:1.05fr 1fr;gap:16px}
+@media(max-width:1000px){main{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:16px}
+.card h2{font-size:14px;margin:0 0 12px;font-weight:700;display:flex;justify-content:space-between;align-items:center}
+.card h2 small{font-weight:400;color:var(--sub);font-size:12px}
+#drop{border:2px dashed #c9d2dd;border-radius:10px;padding:26px;text-align:center;color:var(--sub);
+  cursor:pointer;background:#fbfcfd;transition:.15s}
+#drop:hover,#drop.over{border-color:var(--brand);background:#f2f7ff;color:var(--brand)}
+#drop b{display:block;font-size:14px;color:var(--text);margin-bottom:4px}
+.imgbox{position:relative;margin-top:12px;border-radius:10px;overflow:hidden;background:#20242a;min-height:180px}
+.imgbox img{width:100%;display:block}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-top:10px}
+.seg button{border:0;background:#fff;padding:5px 14px;font-size:12px;cursor:pointer;color:var(--sub)}
+.seg button.on{background:var(--brand);color:#fff}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:7px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+th{color:var(--sub);font-weight:600;font-size:12px}
+.dot{width:10px;height:10px;border-radius:3px;display:inline-block;margin-right:7px;vertical-align:middle}
+.bar{height:6px;background:#eef1f5;border-radius:4px;overflow:hidden;min-width:70px}
+.bar>i{display:block;height:100%;background:var(--ok)}
+.bar.low>i{background:var(--warn)}
+input,select{font-family:inherit;font-size:13px;padding:5px 8px;border:1px solid var(--line);
+  border-radius:7px;background:#fff;color:var(--text)}
+input[type=number]{width:78px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+label.f{display:block;font-size:12px;color:var(--sub);margin-bottom:3px}
+.kpi{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:10px}
+.kpi div{background:#fafbfc;border:1px solid var(--line);border-radius:10px;padding:8px 14px;min-width:92px}
+.kpi b{display:block;font-size:19px;line-height:1.25}
+.kpi span{font-size:11px;color:var(--sub)}
+.tag{font-size:11px;padding:2px 7px;border-radius:5px;background:var(--chip);color:var(--sub)}
+.tag.ui{background:#e8f0fe;color:#1f6feb}
+.tag.ref{background:#fff4e5;color:#b45309}
+.tag.est{background:#fdecec;color:var(--bad)}
+.alert{border-left:3px solid var(--warn);background:#fffaf0;padding:8px 11px;border-radius:0 8px 8px 0;margin-bottom:8px;font-size:13px}
+.alert.high{border-color:var(--bad);background:#fdf2f2}
+.alert.info{border-color:var(--brand);background:#f2f7ff}
+.alert b{display:block;margin-bottom:2px}
+.alert small{color:var(--sub)}
+pre{background:#0f1319;color:#d6e2f0;padding:12px;border-radius:9px;overflow:auto;max-height:320px;font-size:12px}
+details summary{cursor:pointer;color:var(--brand);font-size:13px;padding:4px 0}
+.rowflex{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.hint{font-size:12px;color:var(--sub);line-height:1.6}
+.spin{color:var(--sub);font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <h1>中餐食物识别 → 营养分析 验收面板</h1>
+  <span class="badge" id="bDev">CPU</span>
+  <span class="badge" id="bModel">det10-v1 / cls10-v1</span>
+  <span class="badge" id="bTime">—</span>
+  <span class="badge" id="bState">加载中…</span>
+</header>
+
+<main>
+  <section>
+    <div class="card">
+      <h2>1. 上传图片 <small>点击或拖拽，支持手机照片 / 多菜品餐盘</small></h2>
+      <div id="drop"><b>点击选择图片，或把图片拖到这里</b>支持 jpg / png，超过 1280px 会自动缩放</div>
+      <input type="file" id="file" accept="image/*" hidden>
+      <div class="imgbox" id="imgbox" hidden><img id="preview" alt="预览"></div>
+      <div class="rowflex" style="margin-top:10px">
+        <div class="seg" id="viewSeg" hidden>
+          <button data-v="ann" class="on">标注图</button><button data-v="orig">原图</button>
+        </div>
+        <span class="hint" id="imgMeta"></span>
+      </div>
+      <div class="rowflex" style="margin-top:10px" id="samples"></div>
+    </div>
+
+    <div class="card">
+      <h2>2. 检测结果 <small>模型输出契约：class_id → food_id 直连营养库</small></h2>
+      <div id="detBox"><span class="hint">上传图片后显示</span></div>
+    </div>
+
+    <div class="card">
+      <h2>3. 分类模型 Top-5 <small>整图分类，适用单菜品场景</small></h2>
+      <div id="clsBox"><span class="hint">上传图片后显示</span></div>
+    </div>
+
+    <div class="card">
+      <h2>4. 原始模型输出 <small>reports/model_output_contract.md</small></h2>
+      <details><summary>展开完整 JSON</summary><pre id="rawJson">—</pre></details>
+    </div>
+  </section>
+
+  <section>
+    <div class="card">
+      <h2>5. 用户档案与当日摄入 <small>用于目标计算与预警</small></h2>
+      <div class="grid3">
+        <div><label class="f">性别</label><select id="gender"><option value="male">男</option><option value="female">女</option></select></div>
+        <div><label class="f">身高 cm</label><input type="number" id="height" value="172"></div>
+        <div><label class="f">体重 kg</label><input type="number" id="weight" value="68"></div>
+        <div><label class="f">年龄</label><input type="number" id="age" value="30"></div>
+        <div><label class="f">活动量</label><select id="activity">
+          <option value="sedentary">久坐</option><option value="light">轻度</option>
+          <option value="moderate" selected>中度</option><option value="active">高强度</option></select></div>
+        <div><label class="f">目标</label><select id="goal">
+          <option value="maintain">维持</option><option value="lose_fat">减脂</option>
+          <option value="gain_muscle">增肌</option><option value="control_sugar">控糖</option></select></div>
+      </div>
+      <div class="grid3" style="margin-top:8px">
+        <div><label class="f">今日已摄入 kcal（可留空）</label><input type="number" id="dayKcal" placeholder="留空=仅本餐"></div>
+        <div><label class="f">今日已摄入 蛋白 g</label><input type="number" id="dayPro" placeholder="留空=仅本餐"></div>
+        <div><label class="f">今日已摄入 碳水 g</label><input type="number" id="dayCarb" placeholder="留空=仅本餐"></div>
+      </div>
+      <div class="hint" style="margin-top:8px">重量默认走「份量参考」（reference_only，非称重值）；填入克数即切换为「称重」。
+        改动任一输入框会自动重算营养与预警。</div>
+    </div>
+
+    <div class="card">
+      <h2>6. 营养计算 <small>weight_g × per-100g</small></h2>
+      <div id="mealBox"><span class="hint">上传图片后显示</span></div>
+      <div class="rowflex" style="margin-top:10px">
+        <select id="mFood" style="max-width:190px"><option value="">人工补录：选择菜品…</option></select>
+        <input type="number" id="mGram" placeholder="克数" >
+        <button onclick="addManual()" style="padding:6px 12px;border-radius:7px;border:1px solid var(--line);background:#fff;cursor:pointer">添加</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>7. 每日目标 <small>PRD 表 4-1 · Mifflin-St Jeor</small></h2>
+      <div id="tarBox"><span class="hint">填写身高体重后计算</span></div>
+    </div>
+
+    <div class="card">
+      <h2>8. 预警 <small>PRD 表 4-2 · AL-01~AL-05，确定性规则</small></h2>
+      <div id="alertBox"><span class="hint">暂无预警</span></div>
+    </div>
+  </section>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+let CUR = null;            // 当前图片 base64
+let LAST = null;           // 最近一次完整响应
+const WEIGHTS = {};        // food_id -> {grams} / {portions}
+const MANUAL = [];         // 人工补录
+const COLORS = ["#e63946","#1d8373","#f39c12","#3498db","#9b59b6","#d35400","#2ecc71","#c0392b","#2980b9","#8e44ad"];
+
+/* ---------- 启动：健康检查 + 菜品清单 ---------- */
+fetch('/api/health').then(r=>r.json()).then(h=>{
+  $('bState').textContent = h.ready ? '模型就绪' : ('未就绪: '+(h.error||''));
+  $('bState').className = 'badge ' + (h.ready ? 'live' : 'err');
+}).catch(e=>{ $('bState').textContent='服务异常'; $('bState').className='badge err'; });
+
+fetch('/api/foods').then(r=>r.json()).then(list=>{
+  const s=$('mFood');
+  list.forEach(f=>{const o=document.createElement('option');o.value=f.food_id;o.textContent=`${f.food_id} · ${f.name_zh}`;s.appendChild(o);});
+}).catch(()=>{});
+
+/* ---------- 内置示例图 ---------- */
+fetch('/api/samples').then(r=>r.json()).then(list=>{
+  const box=$('samples');
+  if(!list.length){ box.innerHTML='<span class="hint">示例图不可用</span>'; return; }
+  box.innerHTML='<span class="hint" style="margin-right:4px">示例：</span>';
+  list.forEach(s=>{
+    const b=document.createElement('button');
+    b.textContent=s.label;
+    b.style.cssText='padding:5px 11px;border:1px solid var(--line);border-radius:7px;background:#fff;cursor:pointer;font-size:12px;font-family:inherit;color:var(--text)';
+    b.onclick=()=>{
+      CUR=s.b64; $('preview').src=CUR; $('imgbox').hidden=false;
+      Object.keys(WEIGHTS).forEach(k=>delete WEIGHTS[k]); MANUAL.length=0;
+      LAST=null; lastView='ann'; run();
+    };
+    box.appendChild(b);
+  });
+}).catch(()=>{});
+
+/* ---------- 上传 ---------- */
+const drop=$('drop'), file=$('file');
+drop.onclick=()=>file.click();
+drop.ondragover=e=>{e.preventDefault();drop.classList.add('over')};
+drop.ondragleave=()=>drop.classList.remove('over');
+drop.ondrop=e=>{e.preventDefault();drop.classList.remove('over');handle(e.dataTransfer.files[0])};
+file.onchange=e=>handle(e.target.files[0]);
+
+function handle(f){
+  if(!f||!f.type.startsWith('image/')) return;
+  const fr=new FileReader();
+  fr.onload=()=>{
+    const img=new Image();
+    img.onload=()=>{
+      const r=Math.min(1,1280/Math.max(img.width,img.height));
+      const c=document.createElement('canvas');
+      c.width=Math.round(img.width*r); c.height=Math.round(img.height*r);
+      c.getContext('2d').drawImage(img,0,0,c.width,c.height);
+      CUR=c.toDataURL('image/jpeg',0.9);
+      $('preview').src=CUR; $('imgbox').hidden=false;
+      setView('ann');
+      lastView='ann';
+      Object.keys(WEIGHTS).forEach(k=>delete WEIGHTS[k]);
+      MANUAL.length=0;
+      LAST=null;      // 换图即清空上次响应，避免 already_fired 跨图残留导致预警被抑制
+      run();
+    };
+    img.src=fr.result;
+  };
+  fr.readAsDataURL(f);
+}
+
+let lastView='ann';
+function setView(v){
+  if(!LAST) return;
+  const src=(v==='ann'?LAST.image_b64:LAST.orig_b64);
+  if(!src){ $('preview').src=CUR; $('viewSeg').hidden=true; return; }  // 后端无图（如解码失败）时保留上传的原预览
+  lastView=v;
+  $('viewSeg').hidden=false;
+  [...$('viewSeg').children].forEach(b=>b.classList.toggle('on',b.dataset.v===v));
+  $('preview').src='data:image/jpeg;base64,'+src;
+}
+$('viewSeg').onclick=e=>{if(e.target.dataset.v) setView(e.target.dataset.v)};
+
+/* ---------- 请求 ---------- */
+let timer=null;
+function schedule(){clearTimeout(timer);timer=setTimeout(run,350);}
+['height','weight','age','dayKcal','dayPro','dayCarb'].forEach(i=>$(i).oninput=schedule);
+['gender','activity','goal'].forEach(i=>$(i).onchange=schedule);
+
+function payload(){
+  return {
+    image_b64: CUR,
+    weights: WEIGHTS,
+    manual: MANUAL,
+    already_fired: (LAST?.alerts||[]).map(a=>a.code),
+    profile:{gender:$('gender').value,height_cm:+$('height').value,weight_kg:+$('weight').value,
+             age:+$('age').value,activity:$('activity').value,goal:$('goal').value},
+    day_totals:{energy_kcal:$('dayKcal').value,protein_g:$('dayPro').value,carb_g:$('dayCarb').value}
+  };
+}
+
+function run(){
+  if(!CUR) return;
+  $('bState').textContent='推理中…'; $('bState').className='badge';
+  fetch('/api/analyze',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload())})
+   .then(r=>r.json()).then(d=>{
+     if(d.error){ $('bState').textContent='错误: '+d.error; $('bState').className='badge err'; return; }
+     LAST=d;
+     $('bState').textContent='完成'; $('bState').className='badge live';
+     $('bTime').textContent=`检测 ${d.meta.det_ms}ms · 分类 ${d.meta.cls_ms}ms · 合计 ${d.meta.total_ms}ms`;
+     $('imgMeta').textContent=`${d.meta.image_width}×${d.meta.image_height} · ${d.meta.device}`;
+     setView(lastView);
+     renderDet(d); renderCls(d); renderMeal(d); renderTar(d); renderAlert(d);
+     $('rawJson').textContent=JSON.stringify({meta:d.meta,detection:d.detection,classification:d.classification},null,2);
+   }).catch(e=>{ $('bState').textContent='请求失败'; $('bState').className='badge err'; });
+}
+
+/* ---------- 渲染 ---------- */
+function confBar(c){
+  const low=c<0.6;
+  return `<div class="bar ${low?'low':''}"><i style="width:${(c*100).toFixed(0)}%"></i></div> ${c.toFixed(3)}`;
+}
+
+function renderDet(d){
+  const dets=d.detection.detections;
+  const box=$('detBox');
+  if(!dets.length){
+    let msg=`<div class="alert info"><b>检测器未检出已收录菜品</b>
+      <small>status=${d.detection.status}；可能原因：菜品不在 10 类试点范围内 / 置信度低于 0.3 / 光线与角度。
+      ${(d.detection.warnings||[]).length?'<br>模型提示：'+d.detection.warnings.join('；'):''}</small></div>`;
+    if(d.fallback && d.items.length){
+      const it=d.items[0];
+      msg+=`<table style="margin-top:10px"><tr><th>降级候选（分类器 Top-1）</th><th>food_id</th><th>置信度</th><th>重量(g)</th><th>热量</th></tr>
+        <tr><td><b>${it.food_name}</b> <span class="tag">整图口径·无定位框</span></td>
+        <td>${it.food_id}</td><td>${confBar(it.confidence)}</td>
+        <td><input type="number" min="0" step="10" class="wInput" data-fid="${it.food_id}"
+             value="${(WEIGHTS[it.food_id]&&WEIGHTS[it.food_id].grams)||it.weight_g||''}"></td>
+        <td>${it.energy_kcal!=null?it.energy_kcal.toFixed(0)+' kcal':'—'}</td></tr></table>
+        <div class="hint" style="margin-top:6px">真实域检出率 93.8%（reports/real_image_check.md）；
+        未检出时用分类器兜底是设计内的降级路径。也可用第 6 节「人工补录」从 351 类中选择。</div>`;
+    }else{
+      msg+=`<div class="hint">分类器置信度亦不足 0.5，请用第 6 节「人工补录」从 351 类中手动选择。</div>`;
+    }
+    box.innerHTML=msg;
+    box.querySelectorAll('.wInput').forEach(el=>{
+      el.oninput=()=>{const fid=el.dataset.fid,v=el.value.trim();
+        if(v==='') delete WEIGHTS[fid]; else WEIGHTS[fid]={grams:parseFloat(v)}; schedule();};
+    });
+    return;
+  }
+  let h=`<table><tr><th>色块</th><th>#</th><th>菜品</th><th>food_id</th><th>置信度</th><th>重量(g)</th><th>重量来源</th><th>热量</th></tr>`;
+  dets.forEach((x,i)=>{
+    const it=d.items[i]||{};
+    const w=WEIGHTS[x.food_id];
+    const srcTag = w&&w.grams ? '<span class="tag ui">称重</span>'
+                 : (it.weight_source==='model_estimate' ? '<span class="tag est">模型估算</span>'
+                 : '<span class="tag ref">份量参考</span>');
+    const refTxt = it.ref_portion ? `${it.ref_portion.label}=${it.ref_portion.grams}g` : '无参考';
+    h+=`<tr>
+      <td><span class="dot" style="background:${COLORS[x.class_id%10]}"></span></td>
+      <td>${i+1}</td>
+      <td><b>${x.food_name}</b>${x.confidence<0.6?' <span class="tag">低置信</span>':''}</td>
+      <td>${x.food_id}</td>
+      <td>${confBar(x.confidence)}</td>
+      <td><input type="number" min="0" step="10" value="${(w&&w.grams)||it.weight_g||''}"
+             data-fid="${x.food_id}" class="wInput" placeholder="${refTxt}"></td>
+      <td>${srcTag}</td>
+      <td>${it.energy_kcal!=null?it.energy_kcal.toFixed(0)+' kcal':'—'}</td>
+    </tr>`;
+  });
+  h+='</table>';
+  h+=`<div class="hint" style="margin-top:8px">框坐标（xyxy）：${dets.map(x=>`[${x.bbox_xyxy.map(v=>v.toFixed(0)).join(',')}]`).join(' ')}</div>`;
+  // 诚实暴露重量与营养的估算局限（份量参考 / 缺记录 / 计算失败均由后端给出 warning）
+  const iw=(d.items||[]).flatMap(i=>(i.warnings||[]).map(w=>i.food_name+'：'+w));
+  if(iw.length) h+=`<div class="hint" style="margin-top:6px">⚠ ${iw.join('；')}</div>`;
+  box.innerHTML=h;
+  box.querySelectorAll('.wInput').forEach(el=>{
+    el.oninput=()=>{
+      const fid=el.dataset.fid, v=el.value.trim();
+      if(v==='') delete WEIGHTS[fid]; else WEIGHTS[fid]={grams:parseFloat(v)};
+      schedule();
+    };
+  });
+}
+
+function renderCls(d){
+  const t=d.classification.top5;
+  let h='<table>';
+  t.forEach((x,i)=>{
+    h+=`<tr><td style="width:34px"><b style="color:${i===0?'var(--brand)':'var(--sub)'}">${i+1}</b></td>
+        <td style="width:130px">${x.food_name}</td>
+        <td><div class="bar ${x.prob<0.6?'low':''}"><i style="width:${(x.prob*100).toFixed(0)}%"></i></div></td>
+        <td style="width:70px;text-align:right">${(x.prob*100).toFixed(1)}%</td>
+        <td style="width:60px;color:var(--sub)">id ${x.food_id}</td></tr>`;
+  });
+  $('clsBox').innerHTML=h+'</table>'+
+    `<div class="hint" style="margin-top:8px">分类模型对<b>整图</b>分类（假设单菜品）；多菜品场景请以第 2 节的检测框为准。Top-3 验收口径见 reports/eval_report.md（99.60%）。</div>`;
+}
+
+function renderMeal(d){
+  const m=d.meal;
+  if(!m){
+    // 无有效识别结果 / 计算失败都必须显式说明，不得静默显示"暂无"或回退默认营养值
+    const st=(d.detection&&d.detection.status)||'unknown';
+    const bad=(d.items||[]).filter(i=>i&&i.status==='error');
+    $('mealBox').innerHTML = bad.length
+      ? `<span class="hint">营养计算失败：${bad.map(i=>i.food_name||('food_id='+i.food_id)).join('、')}
+         无可用营养记录或计算异常，本次<b>未产生</b>营养总量（不使用默认营养值兜底）。
+         ${(bad[0].warnings||[]).join('；')}</span>`
+      : `<span class="hint">未产生营养计算：本次无有效识别结果（detection.status=${st}）。
+         识别失败时不使用默认营养值兜底，请更换图片重试，或用下方「人工补录」从 351 类中手动选择。</span>`;
+    return;
+  }
+  const t=m.totals||{};
+  const tg=d.targets;
+  const pct=(v,tv)=>tv?Math.min(100,(v/tv*100)):0;
+  const num=v=>(v==null?0:v);          // 契约允许 totals 中单项为 null（status=partial）
+  // 总重：契约 §5.2 的 totals 仅含 5 项营养字段，不含 weight_g，故由 meal.items 汇总
+  const totalW=(m.items||[]).reduce((s,i)=>s+(i.weight_g||0),0);
+  let h=`<div class="kpi">
+    <div><b>${num(t.energy_kcal).toFixed(0)}</b><span>热量 kcal</span></div>
+    <div><b>${num(t.protein_g).toFixed(1)}</b><span>蛋白质 g</span></div>
+    <div><b>${num(t.fat_g).toFixed(1)}</b><span>脂肪 g</span></div>
+    <div><b>${num(t.carb_g).toFixed(1)}</b><span>碳水 g</span></div>
+    <div><b>${num(t.fiber_g).toFixed(1)}</b><span>纤维 g</span></div>
+    <div><b>${totalW.toFixed(0)}</b><span>总重 g</span></div>
+  </div>`;
+  if(tg){
+    h+=`<div class="grid3" style="gap:12px">
+      ${[['热量',num(t.energy_kcal),tg.target_kcal,'kcal'],['蛋白质',num(t.protein_g),tg.target_protein_g,'g'],
+         ['碳水',num(t.carb_g),tg.target_carb_g,'g'],['脂肪',num(t.fat_g),tg.target_fat_g,'g']]
+        .map(([n,v,tv,u])=>`<div><label class="f">${n} ${v.toFixed(1)} / ${tv} ${u}（${tv?(v/tv*100).toFixed(0):0}%）</label>
+          <div class="bar"><i style="width:${pct(v,tv)}%"></i></div></div>`).join('')}
+    </div>`;
+  }
+  if(m.warnings.length) h+=`<div class="hint" style="margin-top:8px">⚠ ${m.warnings.join('；')}</div>`;
+  $('mealBox').innerHTML=h;
+}
+
+function renderTar(d){
+  const t=d.targets;
+  if(!t){ $('tarBox').innerHTML='<span class="hint">请填写身高体重</span>'; return; }
+  $('tarBox').innerHTML=`<div class="kpi">
+      <div><b>${t.bmr}</b><span>BMR kcal</span></div>
+      <div><b>${t.tdee}</b><span>TDEE kcal</span></div>
+      <div><b>${t.target_kcal}</b><span>日目标 kcal</span></div>
+      <div><b>${t.bmi}</b><span>BMI</span></div>
+    </div>
+    <div class="hint">宏量目标：蛋白 ${t.target_protein_g} g · 脂肪 ${t.target_fat_g} g · 碳水 ${t.target_carb_g} g</div>
+    ${(t.notes||[]).map(n=>`<div class="hint">· ${n}</div>`).join('')}`;
+}
+
+function renderAlert(d){
+  const a=d.alerts||[];
+  if(!a.length){
+    const noItem=!(d.items&&d.items.length);
+    $('alertBox').innerHTML = noItem
+      ? '<span class="hint">未产生预警：本次无有效识别结果，未进入营养计算与规则判定</span>'
+      : (d.targets ? '<span class="hint">未触发任何预警规则</span>'
+                   : '<span class="hint">未产生预警：请填写身高体重以计算每日目标</span>');
+    return;
+  }
+  $('alertBox').innerHTML=a.map(x=>
+    `<div class="alert ${x.severity==='high'?'high':(x.severity==='info'?'info':'')}">
+      <b>${x.code} ${x.name}</b>${x.message}
+      <small>依据：${x.basis||'-'} · 严重度 ${x.severity} · ${x.trigger_time||''}</small></div>`).join('');
+}
+
+function addManual(){
+  const fid=+$('mFood').value, g=+$('mGram').value;
+  if(!fid||!g){ alert('请选择菜品并填写克数'); return; }
+  MANUAL.push({food_id:fid,grams:g}); $('mGram').value=''; run();
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿field_group,field_name,type,unit,nullable,description,source_rule
+原始字段,Food ID,int,-,否,食物ID 0-350；与 DFoodTJ-Rec truth_list 类别ID 一一对应,density.xlsx 原样保留
+原始字段,Food Chinese Name,str,-,否,中文标准名称,density.xlsx 原样保留
+原始字段,Food English Name,str,-,否,英文名称,density.xlsx 原样保留
+原始字段,Density (g/ml),float,g/ml,否,食物整体密度（用于体积↔质量换算）,density.xlsx 原样保留
+原始字段,Carbohydrate mass density (g/g),float,g/g,否,碳水质量密度（×100=每100g克数）,density.xlsx 原样保留
+原始字段,Fat mass density (g/g),float,g/g,否,脂肪质量密度,density.xlsx 原样保留
+原始字段,Protein mass density (g/g),float,g/g,否,蛋白质质量密度,density.xlsx 原样保留
+原始字段,Fiber mass density (g/g),float,g/g,否,膳食纤维质量密度,density.xlsx 原样保留
+原始字段,Energy mass density (kcal/g),float,kcal/g,否,能量质量密度（×100=每100g千卡）,density.xlsx 原样保留
+原始字段,* volume density (g/ml / kcal/ml),float,ml口径,否,各营养素体积密度（用于"体积×密度"估重路径）,density.xlsx 原样保留
+清洗字段,food_id,int,-,否,主键；0-350 连续无重复,= Food ID
+清洗字段,name_zh,str,-,否,中文标准名称,= Food Chinese Name；已校验无重复
+清洗字段,name_en,str,-,否,英文名称,= Food English Name
+清洗字段,tier,int,-,否,1=10类高频试点菜品（PRD MI-01口径）；2=其余341类,build_nutrition_db.py TIER1 常量
+清洗字段,density_g_ml,float,g/ml,否,食物整体密度,= Density (g/ml)
+清洗字段,carb_g_per_100g,float,g/100g,否,碳水化合物每100g含量,= mass density × 100
+清洗字段,fat_g_per_100g,float,g/100g,否,脂肪每100g含量,= mass density × 100
+清洗字段,protein_g_per_100g,float,g/100g,否,蛋白质每100g含量,= mass density × 100
+清洗字段,fiber_g_per_100g,float,g/100g,否,膳食纤维每100g含量,= mass density × 100
+清洗字段,energy_kcal_per_100g,float,kcal/100g,否,能量每100g含量,= mass density × 100
+清洗字段,carb_g_per_ml,float,g/ml,否,碳水体积密度（仅体积估重路径使用）,原样保留
+清洗字段,fat_g_per_ml,float,g/ml,否,脂肪体积密度,原样保留
+清洗字段,protein_g_per_ml,float,g/ml,否,蛋白质体积密度,原样保留
+清洗字段,fiber_g_per_ml,float,g/ml,否,膳食纤维体积密度,原样保留
+清洗字段,energy_kcal_per_ml,float,kcal/ml,否,能量体积密度,原样保留
+清洗字段,data_status,str,-,否,complete=四项核心营养素齐全；partial=存在缺失,由核心列 notna() 推导
+清洗字段,source,str,-,否,数据来源追溯串,固定值 DFoodTJ-Nutr/density.xlsx (Aqua-Calc; Mint Health)
+转换规则,R1,rule,-,-,g/g → g/100g：×100（能量 kcal/g → kcal/100g 同理）,build_nutrition_db.py
+转换规则,R2,rule,-,-,缺失值保留为空（NaN），禁止填0,任务书约束
+转换规则,R3,rule,-,-,生/熟与烹饪口径：density.xlsx 按成品菜（如"红烧肉""炒莲藕"）口径录入，整体视为熟食口径；不做生熟换算,论文 §Methods
+转换规则,R4,rule,-,-,fiber 零值属实测（49条）；fat 零值属实测（2条）；不视为缺失,数据质量报告
+转换规则,R5,rule,-,-,能量与Atwater估算偏差>20%的33条保留原值并列入质量报告,build_nutrition_db.py [5]

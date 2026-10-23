@@ -1,0 +1,2 @@
+HTTP 500
+{"error": "FoodNotFoundError: 'food_id=999 未收录（库范围 0..350）'"}

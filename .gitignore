@@ -1,0 +1,19 @@
+# 大体积数据集（1.2GB，通过 scripts/extract_subset.py 等脚本按需重建）
+food_pipeline/datasets/
+
+# 训练产物缓存
+__pycache__/
+*.pyc
+*.pyo
+runs/
+
+# 本地日志 / 临时文件
+food_pipeline/web/serve.log
+*.log
+
+# 工作区工具目录
+.workbuddy/
+
+# 系统文件
+Thumbs.db
+.DS_Store

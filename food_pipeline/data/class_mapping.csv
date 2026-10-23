@@ -1,0 +1,352 @@
+﻿food_id,name_zh,name_en,tier,tier1_name_check,img_total
+0,米饭,Rice,1,米饭,546
+1,卤鹅,Spiced goose,2,,1593
+2,生菜,Sauteed lettuce,2,,1311
+3,菠菜,Spinach,2,,1228
+4,酱鸭,Braised duck with soy sauce,2,,641
+5,荞麦馒头,Buckwheat bread,2,,1084
+6,鸡蛋,Egg,2,,1087
+7,海参,Sea cucumber,2,,835
+8,地瓜叶,Sweet potato leaves,2,,986
+9,菜包,Steamed vegetable bun,2,,1233
+10,菜肉馄饨,Pork and vegetable wonton,2,,1203
+11,回锅肉,Double cooked pork,2,,1233
+12,青椒,Green pepper,2,,1147
+13,炖鸡蛋,Steamed egg custard,2,,1229
+14,茄子,Eggplant,2,,1211
+15,杂粮饭,Coarse grain,2,,901
+16,蒸南瓜,Pumpkin,2,,821
+17,莴笋肉丝,Lettuce shredded meat,2,,1613
+18,青菜,Sauteed vegetable,2,,1279
+19,炒豆芽,Sauteed bean sprouts,2,,1579
+20,清蒸鸡,Steamed chicken,2,,1402
+21,黄瓜炒肉,Cucumber fried pork,2,,671
+22,馒头,Steamed bun,1,馒头,1198
+23,大排,Grilled pork ribs,2,,726
+24,红烧鱼块,Braised fish fillets,2,,1232
+25,清蒸鳊鱼段,Steamed bream,2,,1048
+26,肉糜茄子,Eggplant with mince pork,2,,1216
+27,农家小炒肉,Shredded Pork with Vegetables,2,,1198
+28,胡萝卜烩小排,Carrot Braised Short Ribs,2,,358
+29,炒西葫芦,Squash,2,,864
+30,葱油冬瓜,Scallion oil winter melon,2,,751
+31,京酱肉丝,Shredded pork in Beijing sauce,2,,1664
+32,茭白胡萝卜肉丝,Zizania carrot shredded pork,2,,913
+33,油麦菜,Leaf lettuce,2,,608
+34,荠菜肉圆,Shepherd,2,,1295
+35,白切鸭,Cut white duck,2,,779
+36,白萝卜烧肉,Roast meat with white radish,2,,440
+37,青椒肉丝,Shredded pork and green pepper,1,青椒肉丝,1419
+38,炒花菜,fried cauliflower,2,,1253
+39,清蒸肉丸,Steamed meatball,2,,1640
+40,西红柿炒鸡蛋,Scrambled egg with tomato,1,西红柿炒鸡蛋,1226
+41,清炒虾仁,Sauteed Shrimp meat,2,,277
+42,白菜,Chinese cabbage,2,,1623
+43,青椒塞肉,Pork stuffed green pepper,2,,356
+44,青椒肉片,Green pepper meat,2,,625
+45,香菇蒸鸡,Steamed Chicken with Mushroom,2,,730
+46,空心菜,tumis kangkung,2,,1198
+47,炒芹菜,Stir-fry celery,2,,626
+48,木须肉,Stir-fried pork with egg and fungus,2,,886
+49,白米虾,White rice shrimp,2,,410
+50,炒卷心菜,Fried cabbage,2,,996
+51,清蒸鲳鱼,Steamed pomfret,2,,762
+52,木耳炒肉丝,Braised Fungus with pork slice,2,,985
+53,清蒸鱼片,Steamed Perch,2,,405
+54,炒荷兰豆,Fry pea,2,,1099
+55,豇豆,cowpea,2,,794
+56,油焖大虾,Braised Shrimp in chili oil,2,,1235
+57,番茄烩肉片,Sirloin tomatoes,2,,1551
+58,啤酒鸭,Beer duck,2,,958
+59,百叶结烧肉,Braised pork with tofu skin knot,2,,533
+60,炒丝瓜,Fried towel gourd,2,,801
+61,黄焖鸡,chicken braised with brown sauce,2,,1198
+62,白菜肉丸,Chinese cabbage meatballs,2,,486
+63,苋菜,Amaranth,2,,785
+64,炒莲藕,Fried lotus root,2,,1590
+65,红烧鲫鱼,Braise in soy sauce carp,2,,1083
+66,清蒸鲈鱼,Steamed Perch,1,清蒸鲈鱼,1224
+67,葱油白萝卜,White radish with scallion oil,2,,337
+68,杭椒牛柳,Sauteed Beef Fillet with Hot Green Pepper,2,,815
+69,三杯鸡,Stewed Chicken with Three Cups Sauce,2,,1009
+70,饺子,Dumplings,1,饺子,1203
+71,鸡腿,Chicken drumsticks,2,,829
+72,口水黄瓜,Cucumber in sauce,2,,1211
+73,豉汁蒸排骨,Steamed spare ribs in black bean sauce,2,,898
+74,冬瓜汤,White gourd soup,1,冬瓜汤,1198
+75,炒菌菇,Fried fungus mushroom,2,,961
+76,豆干,Dried bean curd,2,,831
+77,姜片,Ginger slice,2,,719
+78,南瓜饼,Pumpkin pie,2,,1198
+79,葱花手抓饼,Pine cake with Diced Scallion,2,,1198
+80,坚果,Nuts,2,,930
+81,剁椒鱼头,Steamed Fish Head with Diced Hot Red Peppers,2,,1132
+82,麻婆豆腐,Mapo Tofu,1,麻婆豆腐,1198
+83,红烧肉,Braised pork in brown sauce,1,红烧肉,1630
+84,梨,Pear,2,,420
+85,水果沙拉,Fruit salad,2,,1508
+86,洋葱炒肉,Fried meat with onion,2,,259
+87,萝卜排骨汤,Pork ribs soup with radish,2,,1337
+88,面包,Bread,2,,1253
+89,牛角包,Croissant,2,,386
+90,吐司,toast,2,,1238
+91,豆皮,Skin of bean curd,2,,469
+92,银耳汤,White fungus soup,2,,1213
+93,三明治,Sandwich,2,,437
+94,豆浆,Soybean milk,2,,575
+95,皮蛋,Preserved eggs,2,,462
+96,午餐肉,Luncheon meat,2,,816
+97,炒鸡蛋,Scrambled eggs,2,,432
+98,上汤娃娃菜,Steamed Baby Cabbage,2,,1198
+99,粉蒸排骨,Steamed pork with rice powder,2,,566
+100,芹菜香干,Celery and tofu,2,,470
+101,白斩鸡,Boiled chicken,2,,345
+102,咖啡,Coffee,2,,850
+103,黑胡椒牛肉,Black pepper beef,2,,516
+104,玉米棒,Corn Cob,2,,295
+105,油焖茭白,Braised water bamboo,2,,476
+106,牛奶,Milk,2,,491
+107,红烧牛肉,Braised beef,2,,345
+108,烧麦,Steamed Pork Dumplings,2,,1220
+109,凉拌木耳,Black Fungus in Vinegar Sauce,2,,965
+110,清炒山药,Fried Yam,2,,967
+111,鸡丝,Shredded chicken,2,,1198
+112,黄瓜炒鸡蛋,Scrambled Egg with cucumber,2,,1064
+113,红薯,Sweet potato,2,,834
+114,肉酱意大利面,spaghetti with meat sauce,2,,1173
+115,汉堡,Hamburger,2,,896
+116,燕麦片,Oats,2,,516
+117,卤蛋,Marinated Egg,2,,1224
+118,酱牛肉,Sauced beef,2,,1233
+119,酸菜鱼,Sauerkraut fish,2,,1198
+120,担担面,Sichuan noodles with peppery sauce,2,,192
+121,烤鸡肉串,Grilled chicken kebab,2,,855
+122,辣白菜,Spicy cabbage,2,,663
+123,培根金针菇卷,Bacon roll stuffed with golden needle mushroom,2,,1078
+124,烤鱼,grilled fish,2,,1533
+125,牛奶布丁,Milk pudding,2,,556
+126,烤羊骨棒,Roast sheep bone rods,2,,540
+127,凉拌胡萝卜丝,Salad with shredded carrots,2,,537
+128,肉丝豆干,Pork and bean curd,2,,418
+129,咖喱粉丝牛肉汤,Curry vermicelli beef soup,2,,293
+130,毛豆,Green soybean,2,,1198
+131,咕噜肉,Cripsy sweet & sour pork slices,2,,510
+132,臊子面,Qishan noodles,2,,356
+133,松仁玉米,Sauteed Sweet Corn with Pine Nuts,2,,587
+134,糖醋里脊,Fried Sweet and Sour Tenderloin,2,,1198
+135,炒苦瓜,sauteed bitter melon,2,,958
+136,蚝油西兰花,Broccoli with Oyster Sauce,1,蚝油西兰花,1397
+137,蚝油杏鲍菇,Oyster mushroom,2,,1198
+138,干煸豆角,Fried beans,2,,1036
+139,酱菜,Pickles,2,,615
+140,手撕包菜,Shredded cabbage,2,,1235
+141,芝麻糊,Sesame paste,2,,806
+142,香辣小龙虾,Spicy crayfish,2,,1199
+143,红烧牛肉面,Braised beef noodles,2,,1200
+144,三文鱼,Salmon,2,,874
+145,鲍鱼,Abalone,2,,1279
+146,煎豆腐,Fried Tofu,2,,946
+147,白菜汤,Cabbage soup,2,,706
+148,葱爆羊肉,Sauteed Sliced Lamb with Scallion,2,,677
+149,蒜苔,Garlic moss,2,,809
+150,扇贝,Scallop in Shell,2,,1162
+151,凉拌西红柿,Tomato salad,2,,378
+152,宫保鸡丁,Kung Pao Chicken,2,,1198
+153,韭菜炒鸡蛋,Scrambled Egg with Leek,2,,1050
+154,锅包肉,Pot bag meat,2,,1198
+155,雪菜冬笋肉丝,Shredded pork with cabbage and winter bamboo shoot,2,,253
+156,燕麦粥,Oats porridge,2,,808
+157,酸辣汤,Hot and Sour Soup,2,,380
+158,汤圆,Tang-yuan,2,,1199
+159,春卷,Spring rolls,2,,819
+160,糖醋排骨,Sweet and sour spare ribs,2,,1198
+161,土豆炖牛腩,Stewed sirloin potatoes,2,,1198
+162,糖醋鲤鱼,Sweet and sour fish,2,,627
+163,叉烧,roast pork,2,,1310
+164,鸡胸肉,Chicken breast,2,,789
+165,小米粥,Millet congee,2,,961
+166,粽子,rice dumpling,2,,832
+167,扬州炒饭,Yangzhou fried rice,2,,1198
+168,豆腐花,Bean curd,2,,475
+169,荞麦面,buck wheat noodle,2,,850
+170,荷包蛋,Poached Egg,2,,1031
+171,韭菜盒子,Chinese chive pockets,2,,1198
+172,紫菜蛋花汤,Seaweed and Egg Soup,2,,795
+173,萝卜糕,Turnip cake,2,,796
+174,黑米燕麦粥,Black rice oatmeal,2,,226
+175,芦笋,Asparagus,2,,825
+176,锅巴,Rice crust,2,,309
+177,炒面,fried noodles,2,,1198
+178,西红柿鸡蛋面,Noodles with egg and tomato,2,,1198
+179,胡萝卜绿豆粥,Carrot and mung bean porridge,2,,643
+180,西红柿鸡蛋汤,Tomato and Egg Soup,2,,1030
+181,家常豆腐,Home style sauteed Tofu,2,,871
+182,蔬菜色拉,Vegetable salad,2,,802
+183,炒秋葵,Fried okra,2,,809
+184,豆角肉丝,Shredded pork with bean,2,,1198
+185,酸辣土豆丝,Potato silk,2,,1202
+186,鱼香肉丝,Fish-flavored shredded pork,2,,1208
+187,鳕鱼段,The cod period,2,,528
+188,玉米排骨汤,Corn and sparerib soup,2,,1198
+189,大盘鸡,Saute Spicy Chicken,2,,1198
+190,乌鸡汤,Black bone chicken soup,2,,567
+191,西湖牛肉羹,West Lake beef soup,2,,1128
+192,海带豆腐汤,Seaweed tofu soup,2,,136
+193,菠菜猪肝汤,Spinach and pork liver soup,2,,110
+194,罗宋汤,Borsch,2,,645
+195,酱汤,Miso soup,2,,738
+196,水煮鱼,Fish Filets in Hot Chili Oil,2,,1065
+197,重庆酸辣粉,Chongqing Hot and Sour Rice Noodles,2,,987
+198,茄汁拌面,Noodles with tomato sauce,2,,1198
+199,鲫鱼豆腐汤,Crucian and Bean Curd Soup,2,,1198
+200,疙瘩汤,Dough Drop and Assorted Vegetable Soup,2,,1198
+201,莲藕排骨汤,Lotus Root and Rib soup,2,,616
+202,毛血旺,Duck Blood in Chili Sauce,2,,397
+203,芋头,Taro,2,,686
+204,土豆泥,Pan fried potato,2,,1198
+205,香煎土豆,Pan fried potato,2,,503
+206,土豆焖豆角,Braised beans with potato,2,,506
+207,地三鲜,"Fried Potato, Green Pepper & Eggplant",2,,1198
+208,薯条,French fries,2,,1198
+209,蒜泥茄子,Mashed garlic eggplant,2,,868
+210,炒蚕豆,Sauteed broad beans,2,,644
+211,香煎藕盒,Deep Fried lotus root,2,,577
+212,鸡鸭胗,Gizzard,2,,1066
+213,花生米,peanut,2,,1198
+214,凉拌海带丝,Seaweed salad,2,,967
+215,拔丝山药,Chinese Yam in Hot Toffee,2,,1180
+216,酿苦瓜,stuffed bitter melon,2,,429
+217,凉拌腐竹,Yuba salad,2,,274
+218,香菇青菜,Sauteed Chinese Greens with Mushrooms,2,,534
+219,椒盐蘑菇,Spiced mushroom,2,,177
+220,西芹百合,Sauteed Lily Bulbs and Celery,2,,293
+221,韭菜炒香干,Leak and tofu,2,,135
+222,猪肝,Pork liver,2,,1198
+223,猪耳朵,Pig ears,2,,313
+224,海带炖排骨,Braised spareribs with kelp,2,,426
+225,可乐鸡翅,Cola Chicken wings,2,,1198
+226,泡椒凤爪,Chicken Feet with Pickled Peppers,2,,1198
+227,红烧鸡爪,Chicken Feet with black bean sauce,2,,1198
+228,口水鸡,Steamed Chicken with Chili Sauce,2,,823
+229,豉油鸡,Soy sauce chicken,2,,369
+230,辣子鸡,Spicy Chicken,2,,1198
+231,腰花,Scalloped pork or lamb kidneys,2,,513
+232,梅菜扣肉,Pork with salted vegetable,2,,602
+233,猪肉炖粉条,Braised Pork with Vermicelli,2,,357
+234,水煮肉片,Boiled Shredded pork in chili oil,2,,1198
+235,酱焖猪蹄,Braised pig feet with soy sauce,2,,1198
+236,肚丝,Tripe,2,,1122
+237,蚂蚁上树,Sauteed Vermicelli with Spicy Minced Pork,2,,732
+238,孜然羊肉,Fried Lamb with Cumin,2,,365
+239,羊肉串,Lamb shashlik,2,,634
+240,松鼠桂鱼,Sweet and Sour Mandarin Fish,2,,115
+241,红烧带鱼,Braised Hairtail in Brown Sauce,2,,1205
+242,芝士虾球,Cheese Shrimp Meat,2,,1198
+243,虾仁西兰花,Shrimp broccoli,2,,328
+244,香辣虾,Spicy shrimp,2,,929
+245,水晶虾饺,Shrimp Duplings,2,,805
+246,蒜茸粉丝蒸虾,Steamed shrimp with garlic and vermicelli,2,,645
+247,皮皮虾,Pipi shrimp,2,,657
+248,生蚝,Oysters,2,,411
+249,鱿鱼,squid,2,,1198
+250,螃蟹,Crab,2,,1094
+251,甲鱼,Turtle,2,,178
+252,鳝鱼,eel,2,,414
+253,蛋包饭,Omelette,2,,1198
+254,小笼汤包,Steamed Bun Stuffed,2,,1198
+255,家常早餐鸡蛋饼,egg omelet,2,,1198
+256,土豆鸡蛋饼,Potato omelet,2,,1198
+257,鸡蛋灌饼,Egg pie cake,2,,546
+258,芝麻烧饼,Sesame seed cake,2,,1002
+259,肉夹馍,Chinese hamburger,2,,896
+260,南瓜紫薯馒头,steamed bun with purple potato and pumpkin,2,,1198
+261,披萨,Pizza,2,,1669
+262,油条,Deep-fried dough stick,2,,1198
+263,炸酱面,sauteed noodles with minced meat,2,,1198
+264,凉拌凉面,Cold noodles,2,,1198
+265,凉皮,Cold Rice Noodles,2,,1198
+266,河粉,fried rice noodles,2,,557
+267,肠粉,Steamed vermicelli roll,2,,1042
+268,煎饺,Fried Dumplings,2,,1198
+269,红薯粥,Sweet potato porridge,2,,305
+270,海蛰,Jellyfish,2,,41
+271,皮蛋瘦肉粥,Minced Pork Congee with Preserved Egg,2,,1198
+272,大米粥,Rice porridge,2,,1198
+273,紫菜包饭,Laver rice,2,,1198
+274,石锅饭,Stone pot of rice,2,,393
+275,夫妻肺片,Pork Lungs in Chili Sauce,2,,87
+276,麻辣香锅,Spicy pot,2,,1198
+277,黄金如意肉卷,Golden meat rolls,2,,137
+278,蛋糕,Chiffon Cake,2,,1198
+279,蛋挞,Egg Tart,2,,1198
+280,饼干,Biscuits,2,,1198
+281,曲奇饼干,cookies,2,,1198
+282,苏打饼干,Soda biscuit,2,,477
+283,双皮奶,Double skin milk,2,,1198
+284,臭豆腐,Stinky tofu,2,,309
+285,鸡蛋布丁,Egg pudding,2,,1198
+286,冰糖雪梨,Sweet stewed snow pear,2,,1091
+287,冰激凌,ice cream,2,,1112
+288,烤排骨,Grilled Ribs,2,,342
+289,煎带鱼,Pan-fried Hairtail,2,,600
+290,蟹籽沙拉,Crab Roe Salad,2,,474
+291,芝士焗红薯,Baked Sweet Potato with Cheese,2,,399
+292,番茄意面,Tomato Pasta,2,,363
+293,榨菜丝,Shredded Pickled Mustard Greens,2,,415
+294,锡纸猪脑,Pork Brains Wrapped in Foil,2,,364
+295,鱼皮饺,Fish Skin Dumplings,2,,210
+296,生煎,Pan fried bun,2,,1568
+297,水果冰粉,Fruit Ice Powder,2,,451
+298,彩虹蛋糕,Rainbow Cake,2,,795
+299,锡纸豆腐,Tofu Wrapped in Foil,2,,456
+300,玉米布丁酥,Corn Pudding Pastry,2,,428
+301,丝瓜炒蛋,Stir-fried Sponge Gourd with Eggs,2,,479
+302,荷兰豆炒腊肉,Stir-fried Dutch Beans with Cured Meat,2,,432
+303,盐酥杏鲍菇,Salt and Pepper Pleurotus Eryngii,2,,491
+304,水晶虾仁,Crystal Shrimp,2,,440
+305,手抓海鲜,Hand-grabbed Seafood,2,,456
+306,火腿炒饭,Ham Fried Rice,2,,10
+307,肉松小贝,Meat Floss Buns,2,,498
+308,泡椒鱼皮,Pickled Pepper Fish Skin,2,,168
+309,鲜椒鱼,Fresh Pepper Fish,2,,475
+310,洋葱炒鸡蛋,Stir-fried Eggs with Onions,2,,357
+311,烤牛肋排,Grilled Beef Ribs,2,,416
+312,糍饭糕,Glutinous Rice Cake,2,,285
+313,干锅鸭,Dry Pot Duck,2,,449
+314,辣白菜五花肉,Spicy Cabbage with Pork Belly,2,,444
+315,奶油培根意面,Creamy Bacon Pasta,2,,456
+316,肉丝炒面,Stir-fried Noodles with Shredded Meat,2,,282
+317,椒盐排条,Deep-fried spare ribs with spicy salt,2,,341
+318,干锅牛蛙,Dry Pot Bullfrog,2,,414
+319,麻汁豆角,Sesame Sauce Green Beans,2,,992
+320,三文鱼炒饭,Salmon Fried Rice,2,,440
+321,梭子蟹炒年糕,Stir-fried Crab with Rice Cake,2,,434
+322,三丝炒面,Stir-fried Noodles with Three Kinds of Shredded Ingredients,2,,473
+323,蛋黄鲜肉粽,Salted Egg Yolk and Pork Zongzi,2,,370
+324,脆皮乳鸽,Crispy Skin Pigeon,2,,446
+325,爱心鸡排,Heart-shaped Chicken Cutlet,2,,229
+326,乌鸡卷,Black Chicken Roll,2,,472
+327,铁板日本豆腐,Teppanyaki Japanese Tofu,2,,293
+328,水果蛋糕,Fruit Cake,2,,492
+329,丁丁炒面,Stir-fried Noodles,2,,384
+330,烤茄子,Grilled Eggplant,2,,441
+331,酸菜肉丝面,Sour Cabbage Shredded Pork Noodles,2,,323
+332,酸汤肥牛,Sour Soup with Beef,2,,269
+333,芝士焗大虾,Baked Prawns with Cheese,2,,461
+334,南瓜粥,Pumpkin Porridge,2,,450
+335,木薯粉,Tapioca Flour,2,,439
+336,意式肉酱焗面,Baked Pasta with Italian Meat Sauce,2,,390
+337,烤肉饭,Roast Pork Rice,2,,432
+338,养颜木瓜,Beauty-enhancing Papaya,2,,357
+339,木瓜银耳汤,Papaya and White Fungus Soup,2,,382
+340,剁椒皮蛋,Spicy Chopped Preserved Egg,2,,574
+341,红枣银耳汤,Red Date and White Fungus Soup,2,,366
+342,芥兰牛肉,Chinese Broccoli with Beef,2,,312
+343,芋圆西米露,Taro Balls with Sago,2,,363
+344,香肠炒饭,Sausage Fried Rice,2,,499
+345,牛肉粥,Beef Congee,2,,480
+346,蒜香凤爪,Garlic Flavored Chicken Feet,2,,239
+347,红烧肉饭,Braised Pork Rice,2,,499
+348,凉拌莜面,Cold Noodle Salad,2,,843
+349,炸猪排,Fried Pork Chop,2,,873
+350,锅仔羊肉,Pot-style Lamb,2,,487

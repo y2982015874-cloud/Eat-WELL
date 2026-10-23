@@ -1,0 +1,5280 @@
+{
+  "summary": {
+    "n_images": 500,
+    "source": "DFoodTJ-Rec 官方 test split 真实照片（datasets/cls10/test，10 类 × 50 张）",
+    "detection": {
+      "any_box_rate": 0.938,
+      "top1_class_correct_rate": 0.796,
+      "any_box_class_correct_rate": 0.818,
+      "multi_box_rate_on_single_dish": 0.092,
+      "avg_boxes_per_image": 1.036,
+      "avg_top_conf": 0.8343,
+      "latency_ms": {
+        "p50": 41.7,
+        "p95": 59.2,
+        "max": 151.3,
+        "mean": 43.0
+      }
+    },
+    "classification": {
+      "top1_acc": 0.934,
+      "top3_acc": 0.996,
+      "latency_ms": {
+        "p50": 14.9,
+        "p95": 21.0,
+        "max": 102.6,
+        "mean": 15.5
+      }
+    },
+    "per_class": {
+      "0": {
+        "name": "米饭",
+        "n": 50,
+        "det_any_box": 0.88,
+        "det_top1_correct": 0.74,
+        "cls_top1": 0.92,
+        "cls_top3": 0.98
+      },
+      "1": {
+        "name": "馒头",
+        "n": 50,
+        "det_any_box": 0.96,
+        "det_top1_correct": 0.72,
+        "cls_top1": 0.92,
+        "cls_top3": 1.0
+      },
+      "2": {
+        "name": "饺子",
+        "n": 50,
+        "det_any_box": 0.88,
+        "det_top1_correct": 0.46,
+        "cls_top1": 0.9,
+        "cls_top3": 1.0
+      },
+      "3": {
+        "name": "红烧肉",
+        "n": 50,
+        "det_any_box": 1.0,
+        "det_top1_correct": 0.92,
+        "cls_top1": 0.92,
+        "cls_top3": 1.0
+      },
+      "4": {
+        "name": "青椒肉丝",
+        "n": 50,
+        "det_any_box": 0.8,
+        "det_top1_correct": 0.72,
+        "cls_top1": 0.96,
+        "cls_top3": 1.0
+      },
+      "5": {
+        "name": "西红柿炒鸡蛋",
+        "n": 50,
+        "det_any_box": 1.0,
+        "det_top1_correct": 0.9,
+        "cls_top1": 0.92,
+        "cls_top3": 1.0
+      },
+      "6": {
+        "name": "清蒸鲈鱼",
+        "n": 50,
+        "det_any_box": 0.96,
+        "det_top1_correct": 0.88,
+        "cls_top1": 0.96,
+        "cls_top3": 1.0
+      },
+      "7": {
+        "name": "麻婆豆腐",
+        "n": 50,
+        "det_any_box": 1.0,
+        "det_top1_correct": 0.88,
+        "cls_top1": 0.98,
+        "cls_top3": 1.0
+      },
+      "8": {
+        "name": "蚝油西兰花",
+        "n": 50,
+        "det_any_box": 0.94,
+        "det_top1_correct": 0.88,
+        "cls_top1": 0.98,
+        "cls_top3": 1.0
+      },
+      "9": {
+        "name": "冬瓜汤",
+        "n": 50,
+        "det_any_box": 0.96,
+        "det_top1_correct": 0.86,
+        "cls_top1": 0.88,
+        "cls_top3": 0.98
+      }
+    },
+    "wall_clock_s": 29.4
+  },
+  "samples": [
+    {
+      "task": "detection",
+      "image_id": "000_test_000000",
+      "model_version": "det10-v1",
+      "task_type": "detection",
+      "image_width": 256,
+      "image_height": 256,
+      "detections": [],
+      "status": "empty",
+      "warnings": [
+        "未检出已收录菜品，建议人工录入"
+      ]
+    },
+    {
+      "task": "detection",
+      "image_id": "000_test_000002",
+      "model_version": "det10-v1",
+      "task_type": "detection",
+      "image_width": 256,
+      "image_height": 256,
+      "detections": [
+        {
+          "class_id": 0,
+          "food_id": 0,
+          "food_name": "米饭",
+          "confidence": 0.9089,
+          "bbox_xyxy": [
+            0.0,
+            0.4,
+            256.0,
+            247.7
+          ]
+        }
+      ],
+      "status": "ok",
+      "warnings": [
+        "存在低置信区域(<0.3)已丢弃，建议人工录入"
+      ]
+    },
+    {
+      "task": "detection",
+      "image_id": "037_test_000003",
+      "model_version": "det10-v1",
+      "task_type": "detection",
+      "image_width": 256,
+      "image_height": 256,
+      "detections": [
+        {
+          "class_id": 5,
+          "food_id": 40,
+          "food_name": "西红柿炒鸡蛋",
+          "confidence": 0.4276,
+          "bbox_xyxy": [
+            0.0,
+            0.0,
+            256.0,
+            208.6
+          ],
+          "confidence_flag": "low"
+        }
+      ],
+      "status": "low_confidence",
+      "warnings": []
+    },
+    {
+      "task": "detection",
+      "image_id": "037_test_000009",
+      "model_version": "det10-v1",
+      "task_type": "detection",
+      "image_width": 256,
+      "image_height": 256,
+      "detections": [],
+      "status": "empty",
+      "warnings": [
+        "未检出已收录菜品，建议人工录入"
+      ]
+    },
+    {
+      "task": "detection",
+      "image_id": "082_test_000003",
+      "model_version": "det10-v1",
+      "task_type": "detection",
+      "image_width": 256,
+      "image_height": 256,
+      "detections": [
+        {
+          "class_id": 7,
+          "food_id": 82,
+          "food_name": "麻婆豆腐",
+          "confidence": 0.9561,
+          "bbox_xyxy": [
+            0.5,
+            0.0,
+            256.0,
+            254.6
+          ]
+        }
+      ],
+      "status": "ok",
+      "warnings": []
+    },
+    {
+      "task": "detection",
+      "image_id": "082_test_000004",
+      "model_version": "det10-v1",
+      "task_type": "detection",
+      "image_width": 256,
+      "image_height": 256,
+      "detections": [
+        {
+          "class_id": 7,
+          "food_id": 82,
+          "food_name": "麻婆豆腐",
+          "confidence": 0.8758,
+          "bbox_xyxy": [
+            0.0,
+            1.0,
+            256.0,
+            249.4
+          ]
+        }
+      ],
+      "status": "ok",
+      "warnings": []
+    },
+    {
+      "task": "classification",
+      "image_id": "000_test_000000",
+      "model_version": "cls10-v1",
+      "task_type": "classification",
+      "image_width": 256,
+      "image_height": 256,
+      "detections": [
+        {
+          "class_id": 0,
+          "food_id": 0,
+          "food_name": "米饭",
+          "confidence": 0.9951,
+          "bbox_xyxy": null
+        }
+      ],
+      "status": "ok",
+      "warnings": []
+    },
+    {
+      "task": "classification",
+      "image_id": "136_test_000001",
+      "model_version": "cls10-v1",
+      "task_type": "classification",
+      "image_width": 342,
+      "image_height": 256,
+      "detections": [
+        {
+          "class_id": 8,
+          "food_id": 136,
+          "food_name": "蚝油西兰花",
+          "confidence": 1.0,
+          "bbox_xyxy": null
+        }
+      ],
+      "status": "ok",
+      "warnings": []
+    }
+  ],
+  "per_image": [
+    {
+      "image": "0_米饭/000_test_000000.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000002.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 2,
+      "det_top1": 0,
+      "det_top1_conf": 0.9089,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000003.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.773,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000004.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.6979,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000005.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 2,
+      "det_top1": 0,
+      "det_top1_conf": 0.7347,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000006.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.4532,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000007.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.9883,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000008.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9828,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000009.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.9066,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000010.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.8124,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000011.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9743,
+      "cls_top1": 7,
+      "cls_hit3": false
+    },
+    {
+      "image": "0_米饭/000_test_000012.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.73,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000014.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.2967,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000015.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.8097,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000016.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9135,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000017.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.969,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000018.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.9769,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000019.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 2,
+      "det_top1": 0,
+      "det_top1_conf": 0.8353,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000020.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.7339,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000021.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 2,
+      "det_top1": 0,
+      "det_top1_conf": 0.885,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000022.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 2,
+      "det_top1": 0,
+      "det_top1_conf": 0.8556,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000023.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9086,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000024.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.4459,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000025.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000026.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.6951,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000027.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 2,
+      "det_top1": 2,
+      "det_top1_conf": 0.499,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000028.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000029.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 2,
+      "det_top1": 0,
+      "det_top1_conf": 0.5585,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000030.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000031.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.3211,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000032.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.9857,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000033.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000035.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.6748,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000036.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.9201,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000038.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.8354,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000039.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.8063,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000040.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.7864,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000041.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.407,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000042.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.5137,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000043.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000045.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.5012,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000046.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.9404,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000047.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.8527,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000048.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.9549,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000049.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.9571,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000050.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.94,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000051.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 2,
+      "det_top1": 0,
+      "det_top1_conf": 0.6038,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000052.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.9613,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000053.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.9124,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "0_米饭/000_test_000054.png",
+      "gt_class": 0,
+      "gt_name": "米饭",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.8751,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000000.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.8133,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000002.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9654,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000003.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.7381,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000005.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.8914,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000010.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9832,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000012.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.6759,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000018.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9002,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000020.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.4278,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000023.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.8459,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000025.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9791,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000027.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.8275,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000029.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.954,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000030.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.614,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000031.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 2,
+      "det_top1": 1,
+      "det_top1_conf": 0.2895,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000033.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.983,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000037.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.8266,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000040.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9837,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000041.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 2,
+      "det_top1": 2,
+      "det_top1_conf": 0.4958,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000042.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9715,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000047.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.723,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000048.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 2,
+      "det_top1": 1,
+      "det_top1_conf": 0.9671,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000051.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000053.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9757,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000054.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.7769,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000055.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9756,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000057.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.5747,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000061.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.438,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000062.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9584,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000064.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9639,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000065.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9766,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000067.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.5473,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000072.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9609,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000077.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.8859,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000078.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9481,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000079.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9658,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000081.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.6947,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000083.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.8908,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000089.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000090.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.987,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000091.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9641,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000094.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.7854,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000097.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9792,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000101.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9521,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000104.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.3672,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000107.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9151,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000110.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.969,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000111.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9802,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000120.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 2,
+      "det_top1": 0,
+      "det_top1_conf": 0.6472,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000122.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9777,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "1_馒头/022_test_000127.png",
+      "gt_class": 1,
+      "gt_name": "馒头",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.8925,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000000.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.7904,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000003.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 2,
+      "det_top1": 2,
+      "det_top1_conf": 0.8572,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000010.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.8736,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000012.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 2,
+      "det_top1": 2,
+      "det_top1_conf": 0.8325,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000013.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.7876,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000014.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000015.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.9741,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000016.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.2511,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000018.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.3966,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000020.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 2,
+      "det_top1": 1,
+      "det_top1_conf": 0.5018,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000027.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.761,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000028.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.8993,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000034.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.8504,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000036.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.8319,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000039.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9686,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000042.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000045.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.4173,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000048.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9604,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000049.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000053.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.8455,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000055.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.7837,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000059.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.8456,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000061.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.3386,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000065.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9812,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000068.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.7558,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000070.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9823,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000073.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 2,
+      "det_top1": 9,
+      "det_top1_conf": 0.4997,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000074.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 2,
+      "det_top1": 1,
+      "det_top1_conf": 0.636,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000075.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.3252,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000076.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000078.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9379,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000079.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000080.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.8261,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000084.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.9279,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000087.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.7045,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000091.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9635,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000093.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.8319,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000096.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.3402,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000098.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.866,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000099.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9379,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000101.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9333,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000110.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.9612,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000115.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 2,
+      "det_top1": 2,
+      "det_top1_conf": 0.6017,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000118.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 2,
+      "det_top1": 1,
+      "det_top1_conf": 0.5886,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000120.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000122.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9332,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000123.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.5463,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000126.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.3432,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000131.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.8664,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "2_饺子/070_test_000135.png",
+      "gt_class": 2,
+      "gt_name": "饺子",
+      "det_n_box": 1,
+      "det_top1": 2,
+      "det_top1_conf": 0.9849,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000001.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9603,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000003.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.976,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000007.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9777,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000012.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9563,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000013.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9365,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000017.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 2,
+      "det_top1": 7,
+      "det_top1_conf": 0.9084,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000019.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.8572,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000023.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9849,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000024.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9232,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000025.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.994,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000028.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9884,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000032.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9805,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000037.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9564,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000038.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9596,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000039.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9276,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000044.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.99,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000045.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9841,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000047.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9768,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000048.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.979,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000052.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9887,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000055.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.3244,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000056.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9688,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000057.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9927,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000070.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 2,
+      "det_top1": 3,
+      "det_top1_conf": 0.9144,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000071.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9714,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000076.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9691,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000077.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.8981,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000082.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9053,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000087.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9861,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000090.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9411,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000091.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.8571,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000095.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.8776,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000099.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9765,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000101.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9864,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000106.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9487,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000110.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9672,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000111.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 2,
+      "det_top1": 3,
+      "det_top1_conf": 0.8847,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000115.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9556,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000125.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 2,
+      "det_top1": 3,
+      "det_top1_conf": 0.544,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000134.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9762,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000139.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9887,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000145.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 2,
+      "det_top1": 3,
+      "det_top1_conf": 0.8398,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000151.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.8318,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000152.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.973,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000153.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9773,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000162.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9791,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000168.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.99,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000170.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.8196,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000174.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.992,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "3_红烧肉/083_test_000178.png",
+      "gt_class": 3,
+      "gt_name": "红烧肉",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.986,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000003.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.4276,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000009.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000010.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9918,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000013.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9082,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000014.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9421,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000015.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 2,
+      "det_top1": 4,
+      "det_top1_conf": 0.5149,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000019.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.8317,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000020.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.983,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000024.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000028.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000032.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9697,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000034.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.7017,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000037.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9807,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000039.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9506,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000041.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9896,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000045.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9415,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000046.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.8962,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000047.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000049.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.8657,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000051.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.7635,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000052.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9048,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000053.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.5631,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000054.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.6159,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000057.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9902,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000062.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000064.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9473,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000066.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000073.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9735,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000077.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000080.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9769,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000084.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.4088,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000085.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9438,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000086.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9969,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000089.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.7732,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000092.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.7242,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000097.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.2853,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000100.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 2,
+      "det_top1": 3,
+      "det_top1_conf": 0.3178,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000103.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.8779,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000108.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9891,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000110.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.2708,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000111.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000112.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.3362,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000114.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.948,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000116.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000119.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.3031,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000120.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000121.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.8952,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000126.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9905,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000128.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.8891,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "4_青椒肉丝/037_test_000130.png",
+      "gt_class": 4,
+      "gt_name": "青椒肉丝",
+      "det_n_box": 1,
+      "det_top1": 4,
+      "det_top1_conf": 0.9691,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000000.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 2,
+      "det_top1": 5,
+      "det_top1_conf": 0.7499,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000005.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.9727,
+      "cls_top1": 0,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000008.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.3943,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000010.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 2,
+      "det_top1": 5,
+      "det_top1_conf": 0.5822,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000012.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9707,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000013.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.877,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000019.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.4084,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000020.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9367,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000021.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.7217,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000024.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9749,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000026.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 2,
+      "det_top1": 1,
+      "det_top1_conf": 0.632,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000027.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 2,
+      "det_top1": 5,
+      "det_top1_conf": 0.7828,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000029.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.3059,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000036.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.8519,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000039.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9726,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000043.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9711,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000045.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9028,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000046.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9431,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000047.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.8186,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000048.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9322,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000051.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9199,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000053.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9568,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000056.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.6888,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000060.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.73,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000063.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9334,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000065.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.915,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000067.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9739,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000070.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.8071,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000072.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9421,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000078.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.7532,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000080.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9451,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000081.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.6419,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000083.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9261,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000086.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9751,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000090.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 2,
+      "det_top1": 7,
+      "det_top1_conf": 0.6163,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000092.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9691,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000098.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9229,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000103.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.6005,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000104.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9511,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000105.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.8006,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000107.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.81,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000110.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 2,
+      "det_top1": 7,
+      "det_top1_conf": 0.8285,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000114.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.6759,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000117.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.3232,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000123.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9233,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000124.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.2736,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000125.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9433,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000127.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.3785,
+      "cls_top1": 3,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000128.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.8609,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "5_西红柿炒鸡蛋/040_test_000130.png",
+      "gt_class": 5,
+      "gt_name": "西红柿炒鸡蛋",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.9145,
+      "cls_top1": 5,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000000.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.983,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000002.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9842,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000006.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.8439,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000009.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9829,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000011.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000012.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9669,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000023.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9871,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000024.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 2,
+      "det_top1": 6,
+      "det_top1_conf": 0.9778,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000026.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000028.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9791,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000031.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.701,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000032.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9821,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000033.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9639,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000035.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9698,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000037.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9769,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000038.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9401,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000041.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 4,
+      "det_top1": 6,
+      "det_top1_conf": 0.8064,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000042.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9913,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000045.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.679,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000051.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9144,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000054.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 2,
+      "det_top1": 9,
+      "det_top1_conf": 0.8217,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000058.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9322,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000060.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9772,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000061.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.8065,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000065.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 2,
+      "det_top1": 6,
+      "det_top1_conf": 0.6172,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000066.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.7865,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000068.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9806,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000069.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.7161,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000070.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9757,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000075.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9432,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000076.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.981,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000078.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 3,
+      "det_top1": 6,
+      "det_top1_conf": 0.865,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000085.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9598,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000091.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9271,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000093.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9566,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000095.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.8735,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000097.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9451,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000098.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9596,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000099.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9916,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000101.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.6196,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000104.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9834,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000106.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9707,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000109.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9657,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000110.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.5142,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000117.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9843,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000118.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9629,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000119.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9433,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000120.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.5147,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000125.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9711,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "6_清蒸鲈鱼/066_test_000127.png",
+      "gt_class": 6,
+      "gt_name": "清蒸鲈鱼",
+      "det_n_box": 1,
+      "det_top1": 6,
+      "det_top1_conf": 0.9629,
+      "cls_top1": 6,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000003.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9561,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000004.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.8758,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000006.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9659,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000008.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 2,
+      "det_top1": 5,
+      "det_top1_conf": 0.4295,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000010.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 2,
+      "det_top1": 0,
+      "det_top1_conf": 0.3667,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000012.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9738,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000016.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9475,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000019.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.8388,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000020.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9444,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000021.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 2,
+      "det_top1": 7,
+      "det_top1_conf": 0.7828,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000023.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9255,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000024.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9696,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000025.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9841,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000029.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9043,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000036.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9741,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000045.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.6246,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000052.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9641,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000056.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.2527,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000057.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9225,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000058.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.6117,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000059.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.8966,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000062.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.788,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000063.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9899,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000064.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9563,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000066.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.4609,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000068.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9812,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000069.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9867,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000073.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.936,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000074.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.4728,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000078.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9107,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000079.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.8298,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000081.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9666,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000087.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9732,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000088.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.7951,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000092.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9404,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000094.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.7981,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000097.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.7594,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000100.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.8078,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000102.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.868,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000105.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9539,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000107.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9652,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000109.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9807,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000114.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.7273,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000115.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9876,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000116.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9839,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000120.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9744,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000121.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9815,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000122.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.8457,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000128.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9749,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "7_麻婆豆腐/082_test_000129.png",
+      "gt_class": 7,
+      "gt_name": "麻婆豆腐",
+      "det_n_box": 1,
+      "det_top1": 7,
+      "det_top1_conf": 0.9708,
+      "cls_top1": 7,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000001.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9699,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000004.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9381,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000005.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9346,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000006.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9346,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000007.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9783,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000008.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9716,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000012.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9725,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000013.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.8111,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000016.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.8738,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000017.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000018.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 2,
+      "det_top1": 8,
+      "det_top1_conf": 0.9531,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000020.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.8172,
+      "cls_top1": 4,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000023.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.6283,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000031.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9385,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000033.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.6071,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000034.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9235,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000037.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9534,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000039.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9555,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000040.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9738,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000041.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.5984,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000044.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.3854,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000046.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000047.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.8408,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000048.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9554,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000049.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.6395,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000054.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.4431,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000055.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.6524,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000056.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.974,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000057.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.7428,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000060.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 2,
+      "det_top1": 8,
+      "det_top1_conf": 0.4641,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000066.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9651,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000067.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9592,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000068.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.4512,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000073.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.8279,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000075.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.8842,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000082.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9095,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000084.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.8908,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000094.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 5,
+      "det_top1_conf": 0.4556,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000096.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 3,
+      "det_top1_conf": 0.9605,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000097.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.6042,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000098.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9803,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000101.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9205,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000103.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.8854,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000104.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.8725,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000105.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9032,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000111.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.8174,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000112.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 2,
+      "det_top1": 8,
+      "det_top1_conf": 0.4819,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000128.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9477,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000129.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "8_蚝油西兰花/136_test_000130.png",
+      "gt_class": 8,
+      "gt_name": "蚝油西兰花",
+      "det_n_box": 1,
+      "det_top1": 8,
+      "det_top1_conf": 0.9662,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000000.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9196,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000001.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.5998,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000002.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9498,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000005.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 0,
+      "det_top1_conf": 0.5733,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000008.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.972,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000011.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.7738,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000015.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9581,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000016.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9303,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000018.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.7842,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000022.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9472,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000023.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9212,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000024.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9587,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000027.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9295,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000030.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9135,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000031.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.8305,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000032.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.7964,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000036.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9283,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000037.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9588,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000038.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 2,
+      "det_top1": 1,
+      "det_top1_conf": 0.7751,
+      "cls_top1": 1,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000044.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 2,
+      "det_top1": 9,
+      "det_top1_conf": 0.9296,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000046.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000048.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.7881,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000051.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.8337,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000052.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.8836,
+      "cls_top1": 2,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000054.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 0,
+      "det_top1": null,
+      "det_top1_conf": null,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000058.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 2,
+      "det_top1": 8,
+      "det_top1_conf": 0.8149,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000059.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9627,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000064.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9248,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000066.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.5639,
+      "cls_top1": 8,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000069.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9339,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000070.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9589,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000071.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.857,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000073.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9512,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000074.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9729,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000077.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9325,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000078.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.7843,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000079.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9576,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000080.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.8997,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000081.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9556,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000082.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9376,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000083.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.889,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000084.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9369,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000088.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9689,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000090.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9168,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000095.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9331,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000102.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9517,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000103.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.9184,
+      "cls_top1": 2,
+      "cls_hit3": false
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000119.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.96,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000127.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 9,
+      "det_top1_conf": 0.8917,
+      "cls_top1": 9,
+      "cls_hit3": true
+    },
+    {
+      "image": "9_冬瓜汤/074_test_000128.png",
+      "gt_class": 9,
+      "gt_name": "冬瓜汤",
+      "det_n_box": 1,
+      "det_top1": 1,
+      "det_top1_conf": 0.9001,
+      "cls_top1": 9,
+      "cls_hit3": true
+    }
+  ]
+}

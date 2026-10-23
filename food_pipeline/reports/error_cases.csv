@@ -1,0 +1,340 @@
+﻿split,task,image,gt,pred,pred_conf,failure_mode
+real,classification,0_米饭/000_test_000008.png,米饭,红烧肉,0.9828,top1 类别错误
+real,classification,0_米饭/000_test_000011.png,米饭,麻婆豆腐,0.9743,top1 类别错误
+real,classification,0_米饭/000_test_000051.png,米饭,饺子,0.6038,top1 类别错误
+real,classification,0_米饭/000_test_000054.png,米饭,冬瓜汤,0.8751,top1 类别错误
+real,classification,1_馒头/022_test_000000.png,馒头,饺子,0.8133,top1 类别错误
+real,classification,1_馒头/022_test_000051.png,馒头,麻婆豆腐,,top1 类别错误
+real,classification,1_馒头/022_test_000067.png,馒头,饺子,0.5473,top1 类别错误
+real,classification,1_馒头/022_test_000094.png,馒头,饺子,0.7854,top1 类别错误
+real,classification,2_饺子/070_test_000045.png,饺子,西红柿炒鸡蛋,0.4173,top1 类别错误
+real,classification,2_饺子/070_test_000048.png,饺子,馒头,0.9604,top1 类别错误
+real,classification,2_饺子/070_test_000059.png,饺子,馒头,0.8456,top1 类别错误
+real,classification,2_饺子/070_test_000099.png,饺子,馒头,0.9379,top1 类别错误
+real,classification,2_饺子/070_test_000110.png,饺子,蚝油西兰花,0.9612,top1 类别错误
+real,classification,3_红烧肉/083_test_000017.png,红烧肉,馒头,0.9084,top1 类别错误
+real,classification,3_红烧肉/083_test_000071.png,红烧肉,麻婆豆腐,0.9714,top1 类别错误
+real,classification,3_红烧肉/083_test_000082.png,红烧肉,麻婆豆腐,0.9053,top1 类别错误
+real,classification,3_红烧肉/083_test_000151.png,红烧肉,冬瓜汤,0.8318,top1 类别错误
+real,classification,4_青椒肉丝/037_test_000015.png,青椒肉丝,米饭,0.5149,top1 类别错误
+real,classification,4_青椒肉丝/037_test_000119.png,青椒肉丝,蚝油西兰花,0.3031,top1 类别错误
+real,classification,5_西红柿炒鸡蛋/040_test_000005.png,西红柿炒鸡蛋,米饭,0.9727,top1 类别错误
+real,classification,5_西红柿炒鸡蛋/040_test_000027.png,西红柿炒鸡蛋,青椒肉丝,0.7828,top1 类别错误
+real,classification,5_西红柿炒鸡蛋/040_test_000090.png,西红柿炒鸡蛋,饺子,0.6163,top1 类别错误
+real,classification,5_西红柿炒鸡蛋/040_test_000127.png,西红柿炒鸡蛋,红烧肉,0.3785,top1 类别错误
+real,classification,6_清蒸鲈鱼/066_test_000065.png,清蒸鲈鱼,冬瓜汤,0.6172,top1 类别错误
+real,classification,6_清蒸鲈鱼/066_test_000078.png,清蒸鲈鱼,青椒肉丝,0.865,top1 类别错误
+real,classification,7_麻婆豆腐/082_test_000128.png,麻婆豆腐,青椒肉丝,0.9749,top1 类别错误
+real,classification,8_蚝油西兰花/136_test_000020.png,蚝油西兰花,青椒肉丝,0.8172,top1 类别错误
+real,classification,9_冬瓜汤/074_test_000016.png,冬瓜汤,饺子,0.9303,top1 类别错误
+real,classification,9_冬瓜汤/074_test_000038.png,冬瓜汤,馒头,0.7751,top1 类别错误
+real,classification,9_冬瓜汤/074_test_000048.png,冬瓜汤,蚝油西兰花,0.7881,top1 类别错误
+real,classification,9_冬瓜汤/074_test_000052.png,冬瓜汤,饺子,0.8836,top1 类别错误
+real,classification,9_冬瓜汤/074_test_000066.png,冬瓜汤,蚝油西兰花,0.5639,top1 类别错误
+real,classification,9_冬瓜汤/074_test_000103.png,冬瓜汤,饺子,0.9184,top1 类别错误
+synth_test,detection,test_00000.jpg,饺子,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00001.jpg,-,馒头,0.3332,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00002.jpg,红烧肉,清蒸鲈鱼,0.6814,定位正确但类别错误 (IoU=1.00)
+synth_test,detection,test_00005.jpg,-,冬瓜汤,0.9738,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00006.jpg,-,青椒肉丝,0.507,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00006.jpg,-,饺子,0.3159,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00012.jpg,青椒肉丝,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00012.jpg,蚝油西兰花,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00012.jpg,饺子,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00013.jpg,冬瓜汤,清蒸鲈鱼,0.926,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00015.jpg,馒头,冬瓜汤,0.2623,定位正确但类别错误 (IoU=0.55)
+synth_test,detection,test_00018.jpg,馒头,麻婆豆腐,0.6896,定位正确但类别错误 (IoU=0.96)
+synth_test,detection,test_00018.jpg,清蒸鲈鱼,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00018.jpg,青椒肉丝,红烧肉,0.2884,定位正确但类别错误 (IoU=0.98)
+synth_test,detection,test_00018.jpg,蚝油西兰花,红烧肉,0.8765,定位正确但类别错误 (IoU=0.95)
+synth_test,detection,test_00018.jpg,-,西红柿炒鸡蛋,0.3938,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00018.jpg,-,红烧肉,0.3807,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00018.jpg,-,麻婆豆腐,0.3111,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00019.jpg,西红柿炒鸡蛋,红烧肉,0.7443,定位正确但类别错误 (IoU=0.97)
+synth_test,detection,test_00019.jpg,-,红烧肉,0.3756,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00021.jpg,米饭,馒头,0.7253,定位正确但类别错误 (IoU=0.94)
+synth_test,detection,test_00021.jpg,-,米饭,0.438,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00022.jpg,西红柿炒鸡蛋,红烧肉,0.3114,定位正确但类别错误 (IoU=0.89)
+synth_test,detection,test_00024.jpg,饺子,清蒸鲈鱼,0.6912,定位正确但类别错误 (IoU=1.00)
+synth_test,detection,test_00024.jpg,-,饺子,0.4322,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00025.jpg,麻婆豆腐,清蒸鲈鱼,0.9877,定位正确但类别错误 (IoU=0.69)
+synth_test,detection,test_00025.jpg,清蒸鲈鱼,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00026.jpg,饺子,红烧肉,0.8595,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00029.jpg,饺子,米饭,0.5901,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00029.jpg,-,米饭,0.6188,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00029.jpg,-,饺子,0.4875,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00030.jpg,冬瓜汤,米饭,0.3938,定位正确但类别错误 (IoU=0.94)
+synth_test,detection,test_00030.jpg,馒头,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00030.jpg,-,冬瓜汤,0.4026,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00031.jpg,馒头,饺子,0.9521,定位正确但类别错误 (IoU=1.00)
+synth_test,detection,test_00034.jpg,-,米饭,0.8961,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00035.jpg,馒头,红烧肉,0.2795,定位正确但类别错误 (IoU=0.92)
+synth_test,detection,test_00035.jpg,蚝油西兰花,青椒肉丝,0.9542,定位正确但类别错误 (IoU=0.97)
+synth_test,detection,test_00037.jpg,米饭,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00039.jpg,饺子,青椒肉丝,0.9729,定位正确但类别错误 (IoU=0.55)
+synth_test,detection,test_00039.jpg,青椒肉丝,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00040.jpg,-,青椒肉丝,0.2712,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00041.jpg,馒头,米饭,0.5769,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00041.jpg,米饭,麻婆豆腐,0.8536,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00041.jpg,-,馒头,0.738,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00045.jpg,米饭,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00048.jpg,-,馒头,0.8181,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00049.jpg,蚝油西兰花,红烧肉,0.9398,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00049.jpg,麻婆豆腐,馒头,0.2519,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00049.jpg,-,蚝油西兰花,0.7354,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00049.jpg,-,饺子,0.4932,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00050.jpg,-,米饭,0.308,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00053.jpg,麻婆豆腐,红烧肉,0.5849,定位正确但类别错误 (IoU=0.98)
+synth_test,detection,test_00055.jpg,饺子,冬瓜汤,0.983,定位正确但类别错误 (IoU=0.61)
+synth_test,detection,test_00055.jpg,清蒸鲈鱼,青椒肉丝,0.3942,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00055.jpg,冬瓜汤,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00055.jpg,-,米饭,0.2681,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00056.jpg,清蒸鲈鱼,馒头,0.8392,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00056.jpg,红烧肉,青椒肉丝,0.857,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00056.jpg,-,红烧肉,0.8574,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00058.jpg,冬瓜汤,馒头,0.9788,定位正确但类别错误 (IoU=0.69)
+synth_test,detection,test_00058.jpg,馒头,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00059.jpg,冬瓜汤,饺子,0.3936,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00061.jpg,红烧肉,米饭,0.9882,定位正确但类别错误 (IoU=0.57)
+synth_test,detection,test_00061.jpg,米饭,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00062.jpg,馒头,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00063.jpg,-,麻婆豆腐,0.6216,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00064.jpg,冬瓜汤,馒头,0.4336,定位正确但类别错误 (IoU=1.00)
+synth_test,detection,test_00064.jpg,-,冬瓜汤,0.3419,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00065.jpg,麻婆豆腐,青椒肉丝,0.3809,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00065.jpg,-,麻婆豆腐,0.852,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00068.jpg,米饭,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00069.jpg,饺子,冬瓜汤,0.9421,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00071.jpg,冬瓜汤,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00076.jpg,青椒肉丝,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00079.jpg,红烧肉,米饭,0.9814,定位正确但类别错误 (IoU=0.55)
+synth_test,detection,test_00079.jpg,米饭,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00082.jpg,冬瓜汤,蚝油西兰花,0.4404,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00082.jpg,-,饺子,0.3089,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00086.jpg,米饭,饺子,0.9399,定位正确但类别错误 (IoU=0.55)
+synth_test,detection,test_00086.jpg,饺子,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00087.jpg,饺子,馒头,0.7347,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00087.jpg,-,饺子,0.9254,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00089.jpg,西红柿炒鸡蛋,青椒肉丝,0.2861,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00089.jpg,-,馒头,0.7623,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00089.jpg,-,麻婆豆腐,0.4082,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00090.jpg,冬瓜汤,馒头,0.9482,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00098.jpg,-,西红柿炒鸡蛋,0.3924,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00099.jpg,饺子,冬瓜汤,0.4516,定位正确但类别错误 (IoU=0.83)
+synth_test,detection,test_00102.jpg,清蒸鲈鱼,红烧肉,0.4663,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00102.jpg,-,清蒸鲈鱼,0.4357,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00103.jpg,麻婆豆腐,饺子,0.3233,定位正确但类别错误 (IoU=0.90)
+synth_test,detection,test_00103.jpg,馒头,饺子,0.4049,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00106.jpg,蚝油西兰花,冬瓜汤,0.4702,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00106.jpg,-,饺子,0.4061,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00106.jpg,-,清蒸鲈鱼,0.2881,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00107.jpg,蚝油西兰花,西红柿炒鸡蛋,0.7347,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00107.jpg,-,蚝油西兰花,0.7479,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00108.jpg,冬瓜汤,清蒸鲈鱼,0.9414,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00110.jpg,红烧肉,米饭,0.9799,定位正确但类别错误 (IoU=0.62)
+synth_test,detection,test_00110.jpg,米饭,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00111.jpg,馒头,饺子,0.787,定位正确但类别错误 (IoU=0.97)
+synth_test,detection,test_00113.jpg,麻婆豆腐,青椒肉丝,0.667,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00115.jpg,清蒸鲈鱼,饺子,0.743,定位正确但类别错误 (IoU=0.68)
+synth_test,detection,test_00117.jpg,饺子,冬瓜汤,0.7878,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00117.jpg,-,饺子,0.8481,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00122.jpg,米饭,蚝油西兰花,0.3209,定位正确但类别错误 (IoU=0.98)
+synth_test,detection,test_00123.jpg,馒头,麻婆豆腐,0.941,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00124.jpg,馒头,饺子,0.7794,定位正确但类别错误 (IoU=0.90)
+synth_test,detection,test_00124.jpg,蚝油西兰花,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00126.jpg,饺子,馒头,0.9298,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00129.jpg,饺子,冬瓜汤,0.8077,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00129.jpg,-,饺子,0.4058,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00129.jpg,-,馒头,0.3822,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00129.jpg,-,清蒸鲈鱼,0.2588,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00131.jpg,馒头,清蒸鲈鱼,0.4895,定位正确但类别错误 (IoU=0.98)
+synth_test,detection,test_00133.jpg,馒头,麻婆豆腐,0.5463,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00134.jpg,饺子,冬瓜汤,0.8975,定位正确但类别错误 (IoU=1.00)
+synth_test,detection,test_00135.jpg,馒头,米饭,0.3155,定位正确但类别错误 (IoU=0.97)
+synth_test,detection,test_00135.jpg,蚝油西兰花,饺子,0.6201,定位正确但类别错误 (IoU=0.70)
+synth_test,detection,test_00137.jpg,西红柿炒鸡蛋,馒头,0.8572,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00137.jpg,馒头,饺子,0.9885,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00138.jpg,米饭,冬瓜汤,0.8238,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00141.jpg,麻婆豆腐,饺子,0.913,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00143.jpg,饺子,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00144.jpg,红烧肉,清蒸鲈鱼,0.9582,定位正确但类别错误 (IoU=0.64)
+synth_test,detection,test_00144.jpg,米饭,清蒸鲈鱼,0.2857,定位正确但类别错误 (IoU=1.00)
+synth_test,detection,test_00144.jpg,清蒸鲈鱼,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00144.jpg,-,米饭,0.6098,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00148.jpg,冬瓜汤,西红柿炒鸡蛋,0.691,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00148.jpg,-,红烧肉,0.5544,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00151.jpg,青椒肉丝,馒头,0.3601,定位正确但类别错误 (IoU=0.59)
+synth_test,detection,test_00151.jpg,麻婆豆腐,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00151.jpg,馒头,饺子,0.5516,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00156.jpg,-,青椒肉丝,0.4767,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00164.jpg,馒头,饺子,0.3225,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00164.jpg,-,馒头,0.8895,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00165.jpg,馒头,青椒肉丝,0.9624,定位正确但类别错误 (IoU=0.72)
+synth_test,detection,test_00165.jpg,青椒肉丝,清蒸鲈鱼,0.3331,定位正确但类别错误 (IoU=0.51)
+synth_test,detection,test_00166.jpg,米饭,清蒸鲈鱼,0.4479,定位正确但类别错误 (IoU=1.00)
+synth_test,detection,test_00166.jpg,-,米饭,0.9472,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00172.jpg,饺子,冬瓜汤,0.9501,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00176.jpg,冬瓜汤,麻婆豆腐,0.9576,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00179.jpg,清蒸鲈鱼,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00180.jpg,蚝油西兰花,青椒肉丝,0.7839,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00180.jpg,-,蚝油西兰花,0.2575,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00182.jpg,清蒸鲈鱼,青椒肉丝,0.8634,定位正确但类别错误 (IoU=0.98)
+synth_test,detection,test_00186.jpg,-,馒头,0.7995,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00188.jpg,蚝油西兰花,饺子,0.8925,定位正确但类别错误 (IoU=0.53)
+synth_test,detection,test_00188.jpg,饺子,-,,漏检（无 IoU≥0.5 的预测框）
+synth_test,detection,test_00190.jpg,蚝油西兰花,青椒肉丝,0.5495,定位正确但类别错误 (IoU=1.00)
+synth_test,detection,test_00191.jpg,-,麻婆豆腐,0.3739,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00192.jpg,清蒸鲈鱼,红烧肉,0.3305,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00192.jpg,-,清蒸鲈鱼,0.8838,误检（背景/重复框，无匹配 GT）
+synth_test,detection,test_00193.jpg,蚝油西兰花,清蒸鲈鱼,0.9844,定位正确但类别错误 (IoU=1.00)
+synth_test,detection,test_00198.jpg,米饭,饺子,0.5302,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00198.jpg,饺子,冬瓜汤,0.3295,定位正确但类别错误 (IoU=0.99)
+synth_test,detection,test_00198.jpg,-,米饭,0.9406,误检（背景/重复框，无匹配 GT）
+real,detection,0_米饭/000_test_000000.png,米饭,-,,未检出（真实照片无框）
+real,detection,0_米饭/000_test_000002.png,米饭,2 框,0.9089,单菜品真实图出现多框（过分割/误检）
+real,detection,0_米饭/000_test_000005.png,米饭,2 框,0.7347,单菜品真实图出现多框（过分割/误检）
+real,detection,0_米饭/000_test_000008.png,米饭,红烧肉,0.9828,真实照片主框类别错误
+real,detection,0_米饭/000_test_000011.png,米饭,麻婆豆腐,0.9743,真实照片主框类别错误
+real,detection,0_米饭/000_test_000016.png,米饭,冬瓜汤,0.9135,真实照片主框类别错误
+real,detection,0_米饭/000_test_000019.png,米饭,2 框,0.8353,单菜品真实图出现多框（过分割/误检）
+real,detection,0_米饭/000_test_000020.png,米饭,冬瓜汤,0.7339,真实照片主框类别错误
+real,detection,0_米饭/000_test_000021.png,米饭,2 框,0.885,单菜品真实图出现多框（过分割/误检）
+real,detection,0_米饭/000_test_000022.png,米饭,2 框,0.8556,单菜品真实图出现多框（过分割/误检）
+real,detection,0_米饭/000_test_000023.png,米饭,冬瓜汤,0.9086,真实照片主框类别错误
+real,detection,0_米饭/000_test_000025.png,米饭,-,,未检出（真实照片无框）
+real,detection,0_米饭/000_test_000027.png,米饭,饺子,0.499,真实照片主框类别错误
+real,detection,0_米饭/000_test_000027.png,米饭,2 框,0.499,单菜品真实图出现多框（过分割/误检）
+real,detection,0_米饭/000_test_000028.png,米饭,-,,未检出（真实照片无框）
+real,detection,0_米饭/000_test_000029.png,米饭,2 框,0.5585,单菜品真实图出现多框（过分割/误检）
+real,detection,0_米饭/000_test_000030.png,米饭,-,,未检出（真实照片无框）
+real,detection,0_米饭/000_test_000033.png,米饭,-,,未检出（真实照片无框）
+real,detection,0_米饭/000_test_000041.png,米饭,馒头,0.407,真实照片主框类别错误
+real,detection,0_米饭/000_test_000043.png,米饭,-,,未检出（真实照片无框）
+real,detection,0_米饭/000_test_000051.png,米饭,2 框,0.6038,单菜品真实图出现多框（过分割/误检）
+real,detection,1_馒头/022_test_000030.png,馒头,冬瓜汤,0.614,真实照片主框类别错误
+real,detection,1_馒头/022_test_000031.png,馒头,2 框,0.2895,单菜品真实图出现多框（过分割/误检）
+real,detection,1_馒头/022_test_000041.png,馒头,饺子,0.4958,真实照片主框类别错误
+real,detection,1_馒头/022_test_000041.png,馒头,2 框,0.4958,单菜品真实图出现多框（过分割/误检）
+real,detection,1_馒头/022_test_000047.png,馒头,饺子,0.723,真实照片主框类别错误
+real,detection,1_馒头/022_test_000048.png,馒头,2 框,0.9671,单菜品真实图出现多框（过分割/误检）
+real,detection,1_馒头/022_test_000051.png,馒头,-,,未检出（真实照片无框）
+real,detection,1_馒头/022_test_000057.png,馒头,冬瓜汤,0.5747,真实照片主框类别错误
+real,detection,1_馒头/022_test_000065.png,馒头,红烧肉,0.9766,真实照片主框类别错误
+real,detection,1_馒头/022_test_000067.png,馒头,冬瓜汤,0.5473,真实照片主框类别错误
+real,detection,1_馒头/022_test_000077.png,馒头,冬瓜汤,0.8859,真实照片主框类别错误
+real,detection,1_馒头/022_test_000081.png,馒头,米饭,0.6947,真实照片主框类别错误
+real,detection,1_馒头/022_test_000083.png,馒头,西红柿炒鸡蛋,0.8908,真实照片主框类别错误
+real,detection,1_馒头/022_test_000089.png,馒头,-,,未检出（真实照片无框）
+real,detection,1_馒头/022_test_000094.png,馒头,冬瓜汤,0.7854,真实照片主框类别错误
+real,detection,1_馒头/022_test_000104.png,馒头,红烧肉,0.3672,真实照片主框类别错误
+real,detection,1_馒头/022_test_000120.png,馒头,米饭,0.6472,真实照片主框类别错误
+real,detection,1_馒头/022_test_000120.png,馒头,2 框,0.6472,单菜品真实图出现多框（过分割/误检）
+real,detection,2_饺子/070_test_000003.png,饺子,2 框,0.8572,单菜品真实图出现多框（过分割/误检）
+real,detection,2_饺子/070_test_000012.png,饺子,2 框,0.8325,单菜品真实图出现多框（过分割/误检）
+real,detection,2_饺子/070_test_000014.png,饺子,-,,未检出（真实照片无框）
+real,detection,2_饺子/070_test_000018.png,饺子,馒头,0.3966,真实照片主框类别错误
+real,detection,2_饺子/070_test_000020.png,饺子,馒头,0.5018,真实照片主框类别错误
+real,detection,2_饺子/070_test_000020.png,饺子,2 框,0.5018,单菜品真实图出现多框（过分割/误检）
+real,detection,2_饺子/070_test_000036.png,饺子,馒头,0.8319,真实照片主框类别错误
+real,detection,2_饺子/070_test_000039.png,饺子,冬瓜汤,0.9686,真实照片主框类别错误
+real,detection,2_饺子/070_test_000042.png,饺子,-,,未检出（真实照片无框）
+real,detection,2_饺子/070_test_000048.png,饺子,馒头,0.9604,真实照片主框类别错误
+real,detection,2_饺子/070_test_000049.png,饺子,-,,未检出（真实照片无框）
+real,detection,2_饺子/070_test_000055.png,饺子,冬瓜汤,0.7837,真实照片主框类别错误
+real,detection,2_饺子/070_test_000065.png,饺子,馒头,0.9812,真实照片主框类别错误
+real,detection,2_饺子/070_test_000070.png,饺子,冬瓜汤,0.9823,真实照片主框类别错误
+real,detection,2_饺子/070_test_000073.png,饺子,冬瓜汤,0.4997,真实照片主框类别错误
+real,detection,2_饺子/070_test_000073.png,饺子,2 框,0.4997,单菜品真实图出现多框（过分割/误检）
+real,detection,2_饺子/070_test_000074.png,饺子,馒头,0.636,真实照片主框类别错误
+real,detection,2_饺子/070_test_000074.png,饺子,2 框,0.636,单菜品真实图出现多框（过分割/误检）
+real,detection,2_饺子/070_test_000075.png,饺子,馒头,0.3252,真实照片主框类别错误
+real,detection,2_饺子/070_test_000076.png,饺子,-,,未检出（真实照片无框）
+real,detection,2_饺子/070_test_000078.png,饺子,馒头,0.9379,真实照片主框类别错误
+real,detection,2_饺子/070_test_000079.png,饺子,-,,未检出（真实照片无框）
+real,detection,2_饺子/070_test_000080.png,饺子,馒头,0.8261,真实照片主框类别错误
+real,detection,2_饺子/070_test_000087.png,饺子,馒头,0.7045,真实照片主框类别错误
+real,detection,2_饺子/070_test_000091.png,饺子,冬瓜汤,0.9635,真实照片主框类别错误
+real,detection,2_饺子/070_test_000096.png,饺子,冬瓜汤,0.3402,真实照片主框类别错误
+real,detection,2_饺子/070_test_000099.png,饺子,冬瓜汤,0.9379,真实照片主框类别错误
+real,detection,2_饺子/070_test_000101.png,饺子,冬瓜汤,0.9333,真实照片主框类别错误
+real,detection,2_饺子/070_test_000115.png,饺子,2 框,0.6017,单菜品真实图出现多框（过分割/误检）
+real,detection,2_饺子/070_test_000118.png,饺子,馒头,0.5886,真实照片主框类别错误
+real,detection,2_饺子/070_test_000118.png,饺子,2 框,0.5886,单菜品真实图出现多框（过分割/误检）
+real,detection,2_饺子/070_test_000120.png,饺子,-,,未检出（真实照片无框）
+real,detection,2_饺子/070_test_000122.png,饺子,冬瓜汤,0.9332,真实照片主框类别错误
+real,detection,2_饺子/070_test_000131.png,饺子,冬瓜汤,0.8664,真实照片主框类别错误
+real,detection,3_红烧肉/083_test_000017.png,红烧肉,麻婆豆腐,0.9084,真实照片主框类别错误
+real,detection,3_红烧肉/083_test_000017.png,红烧肉,2 框,0.9084,单菜品真实图出现多框（过分割/误检）
+real,detection,3_红烧肉/083_test_000070.png,红烧肉,2 框,0.9144,单菜品真实图出现多框（过分割/误检）
+real,detection,3_红烧肉/083_test_000082.png,红烧肉,麻婆豆腐,0.9053,真实照片主框类别错误
+real,detection,3_红烧肉/083_test_000091.png,红烧肉,冬瓜汤,0.8571,真实照片主框类别错误
+real,detection,3_红烧肉/083_test_000111.png,红烧肉,2 框,0.8847,单菜品真实图出现多框（过分割/误检）
+real,detection,3_红烧肉/083_test_000125.png,红烧肉,2 框,0.544,单菜品真实图出现多框（过分割/误检）
+real,detection,3_红烧肉/083_test_000145.png,红烧肉,2 框,0.8398,单菜品真实图出现多框（过分割/误检）
+real,detection,3_红烧肉/083_test_000151.png,红烧肉,麻婆豆腐,0.8318,真实照片主框类别错误
+real,detection,4_青椒肉丝/037_test_000003.png,青椒肉丝,西红柿炒鸡蛋,0.4276,真实照片主框类别错误
+real,detection,4_青椒肉丝/037_test_000009.png,青椒肉丝,-,,未检出（真实照片无框）
+real,detection,4_青椒肉丝/037_test_000015.png,青椒肉丝,2 框,0.5149,单菜品真实图出现多框（过分割/误检）
+real,detection,4_青椒肉丝/037_test_000019.png,青椒肉丝,红烧肉,0.8317,真实照片主框类别错误
+real,detection,4_青椒肉丝/037_test_000024.png,青椒肉丝,-,,未检出（真实照片无框）
+real,detection,4_青椒肉丝/037_test_000028.png,青椒肉丝,-,,未检出（真实照片无框）
+real,detection,4_青椒肉丝/037_test_000047.png,青椒肉丝,-,,未检出（真实照片无框）
+real,detection,4_青椒肉丝/037_test_000062.png,青椒肉丝,-,,未检出（真实照片无框）
+real,detection,4_青椒肉丝/037_test_000066.png,青椒肉丝,-,,未检出（真实照片无框）
+real,detection,4_青椒肉丝/037_test_000077.png,青椒肉丝,-,,未检出（真实照片无框）
+real,detection,4_青椒肉丝/037_test_000100.png,青椒肉丝,红烧肉,0.3178,真实照片主框类别错误
+real,detection,4_青椒肉丝/037_test_000100.png,青椒肉丝,2 框,0.3178,单菜品真实图出现多框（过分割/误检）
+real,detection,4_青椒肉丝/037_test_000111.png,青椒肉丝,-,,未检出（真实照片无框）
+real,detection,4_青椒肉丝/037_test_000116.png,青椒肉丝,-,,未检出（真实照片无框）
+real,detection,4_青椒肉丝/037_test_000119.png,青椒肉丝,西红柿炒鸡蛋,0.3031,真实照片主框类别错误
+real,detection,4_青椒肉丝/037_test_000120.png,青椒肉丝,-,,未检出（真实照片无框）
+real,detection,5_西红柿炒鸡蛋/040_test_000000.png,西红柿炒鸡蛋,2 框,0.7499,单菜品真实图出现多框（过分割/误检）
+real,detection,5_西红柿炒鸡蛋/040_test_000005.png,西红柿炒鸡蛋,米饭,0.9727,真实照片主框类别错误
+real,detection,5_西红柿炒鸡蛋/040_test_000010.png,西红柿炒鸡蛋,2 框,0.5822,单菜品真实图出现多框（过分割/误检）
+real,detection,5_西红柿炒鸡蛋/040_test_000026.png,西红柿炒鸡蛋,馒头,0.632,真实照片主框类别错误
+real,detection,5_西红柿炒鸡蛋/040_test_000026.png,西红柿炒鸡蛋,2 框,0.632,单菜品真实图出现多框（过分割/误检）
+real,detection,5_西红柿炒鸡蛋/040_test_000027.png,西红柿炒鸡蛋,2 框,0.7828,单菜品真实图出现多框（过分割/误检）
+real,detection,5_西红柿炒鸡蛋/040_test_000090.png,西红柿炒鸡蛋,麻婆豆腐,0.6163,真实照片主框类别错误
+real,detection,5_西红柿炒鸡蛋/040_test_000090.png,西红柿炒鸡蛋,2 框,0.6163,单菜品真实图出现多框（过分割/误检）
+real,detection,5_西红柿炒鸡蛋/040_test_000110.png,西红柿炒鸡蛋,麻婆豆腐,0.8285,真实照片主框类别错误
+real,detection,5_西红柿炒鸡蛋/040_test_000110.png,西红柿炒鸡蛋,2 框,0.8285,单菜品真实图出现多框（过分割/误检）
+real,detection,5_西红柿炒鸡蛋/040_test_000127.png,西红柿炒鸡蛋,红烧肉,0.3785,真实照片主框类别错误
+real,detection,6_清蒸鲈鱼/066_test_000011.png,清蒸鲈鱼,-,,未检出（真实照片无框）
+real,detection,6_清蒸鲈鱼/066_test_000024.png,清蒸鲈鱼,2 框,0.9778,单菜品真实图出现多框（过分割/误检）
+real,detection,6_清蒸鲈鱼/066_test_000026.png,清蒸鲈鱼,-,,未检出（真实照片无框）
+real,detection,6_清蒸鲈鱼/066_test_000031.png,清蒸鲈鱼,麻婆豆腐,0.701,真实照片主框类别错误
+real,detection,6_清蒸鲈鱼/066_test_000041.png,清蒸鲈鱼,4 框,0.8064,单菜品真实图出现多框（过分割/误检）
+real,detection,6_清蒸鲈鱼/066_test_000045.png,清蒸鲈鱼,红烧肉,0.679,真实照片主框类别错误
+real,detection,6_清蒸鲈鱼/066_test_000054.png,清蒸鲈鱼,冬瓜汤,0.8217,真实照片主框类别错误
+real,detection,6_清蒸鲈鱼/066_test_000054.png,清蒸鲈鱼,2 框,0.8217,单菜品真实图出现多框（过分割/误检）
+real,detection,6_清蒸鲈鱼/066_test_000065.png,清蒸鲈鱼,2 框,0.6172,单菜品真实图出现多框（过分割/误检）
+real,detection,6_清蒸鲈鱼/066_test_000078.png,清蒸鲈鱼,3 框,0.865,单菜品真实图出现多框（过分割/误检）
+real,detection,6_清蒸鲈鱼/066_test_000120.png,清蒸鲈鱼,西红柿炒鸡蛋,0.5147,真实照片主框类别错误
+real,detection,7_麻婆豆腐/082_test_000008.png,麻婆豆腐,西红柿炒鸡蛋,0.4295,真实照片主框类别错误
+real,detection,7_麻婆豆腐/082_test_000008.png,麻婆豆腐,2 框,0.4295,单菜品真实图出现多框（过分割/误检）
+real,detection,7_麻婆豆腐/082_test_000010.png,麻婆豆腐,米饭,0.3667,真实照片主框类别错误
+real,detection,7_麻婆豆腐/082_test_000010.png,麻婆豆腐,2 框,0.3667,单菜品真实图出现多框（过分割/误检）
+real,detection,7_麻婆豆腐/082_test_000021.png,麻婆豆腐,2 框,0.7828,单菜品真实图出现多框（过分割/误检）
+real,detection,7_麻婆豆腐/082_test_000056.png,麻婆豆腐,馒头,0.2527,真实照片主框类别错误
+real,detection,7_麻婆豆腐/082_test_000066.png,麻婆豆腐,西红柿炒鸡蛋,0.4609,真实照片主框类别错误
+real,detection,7_麻婆豆腐/082_test_000079.png,麻婆豆腐,米饭,0.8298,真实照片主框类别错误
+real,detection,7_麻婆豆腐/082_test_000114.png,麻婆豆腐,西红柿炒鸡蛋,0.7273,真实照片主框类别错误
+real,detection,8_蚝油西兰花/136_test_000017.png,蚝油西兰花,-,,未检出（真实照片无框）
+real,detection,8_蚝油西兰花/136_test_000018.png,蚝油西兰花,2 框,0.9531,单菜品真实图出现多框（过分割/误检）
+real,detection,8_蚝油西兰花/136_test_000031.png,蚝油西兰花,红烧肉,0.9385,真实照片主框类别错误
+real,detection,8_蚝油西兰花/136_test_000046.png,蚝油西兰花,-,,未检出（真实照片无框）
+real,detection,8_蚝油西兰花/136_test_000060.png,蚝油西兰花,2 框,0.4641,单菜品真实图出现多框（过分割/误检）
+real,detection,8_蚝油西兰花/136_test_000094.png,蚝油西兰花,西红柿炒鸡蛋,0.4556,真实照片主框类别错误
+real,detection,8_蚝油西兰花/136_test_000096.png,蚝油西兰花,红烧肉,0.9605,真实照片主框类别错误
+real,detection,8_蚝油西兰花/136_test_000112.png,蚝油西兰花,2 框,0.4819,单菜品真实图出现多框（过分割/误检）
+real,detection,8_蚝油西兰花/136_test_000129.png,蚝油西兰花,-,,未检出（真实照片无框）
+real,detection,9_冬瓜汤/074_test_000005.png,冬瓜汤,米饭,0.5733,真实照片主框类别错误
+real,detection,9_冬瓜汤/074_test_000018.png,冬瓜汤,馒头,0.7842,真实照片主框类别错误
+real,detection,9_冬瓜汤/074_test_000038.png,冬瓜汤,馒头,0.7751,真实照片主框类别错误
+real,detection,9_冬瓜汤/074_test_000038.png,冬瓜汤,2 框,0.7751,单菜品真实图出现多框（过分割/误检）
+real,detection,9_冬瓜汤/074_test_000044.png,冬瓜汤,2 框,0.9296,单菜品真实图出现多框（过分割/误检）
+real,detection,9_冬瓜汤/074_test_000046.png,冬瓜汤,-,,未检出（真实照片无框）
+real,detection,9_冬瓜汤/074_test_000054.png,冬瓜汤,-,,未检出（真实照片无框）
+real,detection,9_冬瓜汤/074_test_000058.png,冬瓜汤,蚝油西兰花,0.8149,真实照片主框类别错误
+real,detection,9_冬瓜汤/074_test_000058.png,冬瓜汤,2 框,0.8149,单菜品真实图出现多框（过分割/误检）
+real,detection,9_冬瓜汤/074_test_000128.png,冬瓜汤,馒头,0.9001,真实照片主框类别错误
